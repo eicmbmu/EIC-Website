@@ -73,6 +73,10 @@ html, body{
     
 }
 
+.nav-buttons ul li a:hover{
+    
+}
+
 #mbm-logo-img{
     height: 40vh;
     width: 100%;
