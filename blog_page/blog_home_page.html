@@ -1,25 +1,147 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog_home_page.css">
-    <title>Blog</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Medium-like Blog Page
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
-<body>
-    <!-- Nav Bar -->
-    <div class="navbar">
-            <div class="nav-logo">
-                <a href="">
-                    <img src="../images/eic_logo.png" id="ecell-logo" alt="ecell logo">
+
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Weekly Blogs
+            </div>
+            <nav class="space-x-4 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../index.html">
+                    Home
+                </a>
+                <!-- <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../team_page.html">
+                    Our Team
+                </a> -->
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <nav class="px-6 py-4 space-y-2">
+                <a class="block text-gray-600 hover:text-gray-800" href="../index.html">
+                    Home
+                </a>
+                <a class="block text-gray-600 hover:text-gray-800" href="../team_page.html">
+                    Our Team
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <div class="mb-4">
+            <a class="text-gray-800 hover:text-gray-600" href="../index.html">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-2">
+                <a href="blogs/blog-1.html">
+                    <article
+                        class="bg-white p-6 rounded-lg shadow-md mb-6 hover:shadow-lg transition-shadow duration-300 hover:bg-gray-100 hover-grow">
+                        <img alt="A detailed description of the blog post image"
+                            class="w-full h-64 object-cover rounded-t-lg" height="400"
+                            src="https://storage.googleapis.com/a1aa/image/eDwyZbcbGyyTSK3kmx261ZSToWmpP4rPN03Rwd8luPeo29yTA.jpg"
+                            width="600" />
+                        <div class="mt-4">
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                There are thousands of dumb startups
+                            </h2>
+                            <p class="text-gray-600 mt-2">
+                                “The best startups might be considered slightly less dumb ideas than everyone else’s.”- Peter Thiel, the co-founder of PayPal.
+                            </p>
+                            <div class="mt-4 flex items-center">
+                                <img alt="Author's profile picture" class="w-10 h-10 rounded-full" height="40"
+                                    src="../eiclogo.jpeg"
+                                    width="40" />
+                                <div class="ml-3">
+                                    <p class="text-gray-800 font-bold">
+                                        EIC MBM
+                                    </p>
+                                    <p class="text-gray-600 text-sm">
+                                        Published on January 1, 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
-            <div class="nav-buttons">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                </ul>
+            <aside class="bg-white p-6 rounded-lg shadow-md self-start">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    Recent Posts
+                </h2>
+                <a class="block mb-4 hover:bg-gray-100 p-4 rounded-lg transition duration-300" href="blogs/blog-1.html">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800">
+                            There are thousands of dumb startups
+                        </h3>
+                        <p class="text-gray-600">
+                            Published on January 4, 2023
+                        </p>
+                    </div>
+                </a>
+            </aside>
+        </div>
+    </main>
+    <!-- <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <p class="text-gray-600">
+                © 2023 MyBlog. All rights reserved.
+            </p>
+            <div class="space-x-4">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300" href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300" href="#">
+                    <i class="fab fa-linkedin">
+                    </i>
+                </a>
             </div>
-    </div>
-    <!-- Nav Bar End -->
+        </div> -->
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
 </body>
+
 </html>
