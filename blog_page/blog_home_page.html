@@ -10,6 +10,7 @@
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <script src="comments.js" defer></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -21,6 +22,74 @@
 
         .hover-increase:hover {
             transform: scale(1.1);
+        }
+
+        .like-button, .comment-button {
+            border: 1px solid #e5e7eb;
+            transform-origin: center;
+        }
+
+        .like-button:hover, .comment-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .like-button.liked {
+            background-color: #fee2e2;
+            border-color: #fecaca;
+        }
+
+        .like-button.liked .like-icon {
+            animation: heartBeat 0.3s ease;
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        /* Improve button hover states */
+        .like-button:hover, .comment-button:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Active state for buttons */
+        .like-button:active, .comment-button:active {
+            transform: translateY(1px);
+        }
+
+        .comment-section {
+            background-color: #f9fafb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .comment-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -100,6 +169,21 @@
                                     </p>
                                 </div>
                             </div>
+                            
+                            <div class="flex gap-4 mt-6 pt-4 border-t border-gray-200">
+                                <button class="like-button flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-gray-100 transition-all duration-300" onclick="handleLike(this)">
+                                    <span class="like-icon text-xl">🤍</span>
+                                    <span class="like-count">0</span>
+                                </button>
+                                
+                                <button 
+                                    class="comment-button flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-gray-100 transition-all duration-300"
+                                    onclick="toggleComments(this, event)"
+                                >
+                                    <span class="text-xl">💬</span>
+                                    <span>Comment</span>
+                                </button>
+                            </div>
                         </div>
                     </article>
                 </a>
@@ -129,6 +213,21 @@
                                         Published on November 29, 2024
                                     </p>
                                 </div>
+                            </div>
+                            
+                            <div class="flex gap-4 mt-6 pt-4 border-t border-gray-200">
+                                <button class="like-button flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-gray-100 transition-all duration-300" onclick="handleLike(this)">
+                                    <span class="like-icon text-xl"></span>
+                                    <span class="like-count">0</span>
+                                </button>
+                                
+                                <button 
+                                    class="comment-button flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-gray-100 transition-all duration-300"
+                                    onclick="toggleComments(this, event)"
+                                >
+                                    <span class="text-xl">💬</span>
+                                    <span>Comment</span>
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -186,6 +285,118 @@
             } else {
                 menu.style.display = 'none';
             }
+        });
+
+        // Store likes for each blog post
+        const blogLikes = {
+            'blog-1': parseInt(localStorage.getItem('blog-1-likes')) || 0,
+            'blog-2': parseInt(localStorage.getItem('blog-2-likes')) || 0
+        };
+
+        // Initialize like states
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update all like counters on page load
+            document.querySelectorAll('.like-button').forEach((button, index) => {
+                const blogId = `blog-${index + 1}`;
+                const count = button.querySelector('.like-count');
+                count.textContent = blogLikes[blogId];
+                
+                // Check if previously liked
+                if (localStorage.getItem(`${blogId}-liked`) === 'true') {
+                    button.classList.add('liked');
+                    button.querySelector('.like-icon').textContent = '❤️';
+                }
+            });
+        });
+
+        function handleLike(button) {
+            // Get the blog index from the button's position
+            const blogCards = document.querySelectorAll('.like-button');
+            const index = Array.from(blogCards).indexOf(button);
+            const blogId = `blog-${index + 1}`;
+            
+            // Toggle liked state
+            const isLiked = button.classList.toggle('liked');
+            const likeIcon = button.querySelector('.like-icon');
+            const likeCount = button.querySelector('.like-count');
+            
+            // Update like count and icon
+            if (isLiked) {
+                blogLikes[blogId]++;
+                likeIcon.textContent = '❤️';
+                // Add pop animation
+                button.style.animation = 'pop 0.3s ease';
+            } else {
+                blogLikes[blogId]--;
+                likeIcon.textContent = '🤍';
+            }
+            
+            // Update counter and localStorage
+            likeCount.textContent = blogLikes[blogId];
+            localStorage.setItem(`${blogId}-likes`, blogLikes[blogId]);
+            localStorage.setItem(`${blogId}-liked`, isLiked);
+            
+            // Remove animation after it completes
+            button.addEventListener('animationend', () => {
+                button.style.animation = '';
+            });
+        }
+
+        function toggleComments(button) {
+            // Prevent navigation when clicking comment button
+            event.preventDefault();
+            event.stopPropagation();
+            
+            // Find the closest comment section
+            const commentSection = button.closest('.article-content').querySelector('.comment-section');
+            commentSection.classList.toggle('hidden');
+        }
+
+        function addComment(button) {
+            // Prevent navigation
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const commentSection = button.closest('.comment-section');
+            const textarea = commentSection.querySelector('textarea');
+            const commentsList = commentSection.querySelector('.comments-list');
+            const commentText = textarea.value.trim();
+            
+            if (!commentText) return;
+            
+            // Create new comment element
+            const comment = document.createElement('div');
+            comment.className = 'comment-item';
+            comment.innerHTML = `
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-semibold">Anonymous User</div>
+                        <div class="text-gray-600">${commentText}</div>
+                    </div>
+                    <div class="text-sm text-gray-500">
+                        ${new Date().toLocaleString()}
+                    </div>
+                </div>
+            `;
+            
+            // Add comment to list
+            commentsList.insertBefore(comment, commentsList.firstChild);
+            
+            // Clear textarea
+            textarea.value = '';
+            
+            // Update comment count
+            const countSpan = button.closest('.article-content').querySelector('.comment-button .comment-count');
+            const currentCount = parseInt(countSpan.textContent) || 0;
+            countSpan.textContent = currentCount + 1;
+        }
+
+        // Prevent navigation when clicking inside comment section
+        document.querySelectorAll('.comment-section').forEach(section => {
+            section.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+            });
         });
     </script>
 </body>
