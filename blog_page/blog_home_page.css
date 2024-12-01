@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+
+    top: 0;
+
+
+    position: sticky;
+
+    background-color: rgb(31, 43, 48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;;
+}
+
+#ecell-logo{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 70px;
+    background: transparent;
+}
+
+.nav-buttons{
+    margin-right: 70px;
+}
+
+.nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    list-style-type: none;
+
+}
+
+.nav-buttons ul li{
+    width: 10rem;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-buttons ul li a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.nav-buttons ul li a:hover{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+#blog-page-heading{
+    text-align: center;
+    margin: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.blogs{
+    text-decoration: none;
+    color: black;
+}
+
+.blog-post {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.blog-post img {
+    max-width: 70%;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-post h2 {
+    /* margin-top: 0; */
+    margin: 2rem 0;
+}
+
+.blog-post p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}

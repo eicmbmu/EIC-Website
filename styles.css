@@ -1,0 +1,134 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem ;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.nav-link-buttons{
+    margin: 1rem;
+    box-sizing: border-box;
+    width: 10%;
+    text-align: center;
+}
+
+.nav-link-buttons a {
+    color: white;
+    text-decoration: none;
+    /* margin-left: 1.5rem; */
+    transition: transform 0.5s;
+    /* padding: 10px; */
+}
+
+.nav-link-buttons a:hover{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 50%;
+    margin-left: 5%;
+    box-sizing: border-box; /* Ensure padding doesn't extend the box size */
+}
+
+.hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block; /* Make sure the button behaves like text content */
+    margin-top: 1rem; /* Add spacing within the box */
+    background-color: #f0c040;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0b030;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}

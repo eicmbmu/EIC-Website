@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.homepage{
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(36, 49, 55);
+}
+
+.navbar{
+    height: 15vh;
+    width: 100%;
+    z-index: 1;
+
+    top: 0;
+
+
+    position: fixed;
+
+    background-color: rgb(31, 43, 48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;;
+}
+
+#ecell-logo{
+    height: 80px;
+    width: 80px;
+    margin-left: 70px;
+    background: transparent;
+}
+
+.nav-buttons{
+    margin-right: 70px;
+}
+
+.nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    list-style-type: none;
+
+}
+
+.nav-buttons ul li{
+    width: 10rem;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-buttons ul li a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.nav-buttons ul li a:hover{
+    font-size: 1.5rem;
+}
+
+#mbm-logo-img{
+    height: 40vh;
+    width: 100%;
+}
+
+
+.team-page{
+    height: 100%;
+    align-items: center;
+}
+
+#our-team-title{
+    font-size: 3rem;
+    text-align: center;
+    margin: 100px;
+    padding-top: 200px;
+}
+.team{
+    margin: 5vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+.member{
+    height: 14rem;
+    width: 18rem;
+    margin: 10%;
+    background-color: rgb(33, 37, 41);
+    border-radius: 5%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.member img{
+    height: 8rem;
+    width: 7.5rem;
+
+    border-radius: 100%;
+    grid-row: 1;
+    border: 1px solid black;
+
+    position: relative;
+    top: -17%;
+
+    margin-bottom: 10px;
+}
+
+.member p{
+    text-align: center;
+
+    position: relative;
+    top: -15%;
+    margin: 0.3rem 0;
+
+}
+
+.member .member-name{
+    color: #BD9F67;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.member .member-position{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.links{
+    font-size: 3rem;
+    margin-top: 1rem;
+    position: relative;
+    top: -17%;
+}
+.icon{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 1rem 0.7rem;
+    transition: color 0.3s, transform 0.5s;
+}
+
+.icon:hover {
+    font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+    .team{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
