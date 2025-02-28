@@ -9,11 +9,8 @@
 	<script src="https://cdn.tailwindcss.com">
 	</script>
 	<script type="text/javascript">
-		const EMAILJS_SERVICE_ID = "YOUR_SECRET_SERVICE_ID";
-	const EMAILJS_TEMPLATE_ID = "YOUR_SECRET_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_SECRET_PUBLIC_KEY";
         (function () {
-            emailjs.init(EMAILJS_PUBLIC_KEY);
+            emailjs.init("Q4ZoDIJGJ8CkWlLQg);
         })();
     </script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -543,7 +540,7 @@ const EMAILJS_PUBLIC_KEY = "YOUR_SECRET_PUBLIC_KEY";
 			document.getElementById('contact-form').addEventListener('submit', function (event) {
 				event.preventDefault();
 
-				emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+				emailjs.sendForm("service_qkk23x4", "template_mdh0ykn", this)
 					.then(function () {
 						alert('Message sent successfully!');
 					}, function (error) {
