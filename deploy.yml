@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Runs when pushing to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Replace secrets in JavaScript
+        run: |
+          sed -i 's/YOUR_SECRET_SERVICE_ID/${{ secrets.EMAILJS_SERVICE_ID }}/g' public/config.js
+          sed -i 's/YOUR_SECRET_TEMPLATE_ID/${{ secrets.EMAILJS_TEMPLATE_ID }}/g' public/config.js
+          sed -i 's/YOUR_SECRET_PUBLIC_KEY/${{ secrets.EMAILJS_PUBLIC_KEY }}/g' public/config.js
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
