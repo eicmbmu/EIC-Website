@@ -34,12 +34,7 @@ html, body{
     align-items: center;
 }
 
-#ecell-logo{
-    height: 80px;
-    width: 80px;
-    margin-left: 70px;
-    background: transparent;
-}
+
 
 .nav-buttons{
     margin-right: 70px;
@@ -50,18 +45,15 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
     list-style-type: none;
-
 }
 
 .nav-buttons ul li{
-    width: 10rem;
-    padding: 20px;
-    margin: 20px;
+    width: 5rem;
     text-decoration: none;
     text-align: center;
 }
+
 .nav-buttons ul li a{
     color: white;
     font-size: 1.3rem;
@@ -79,10 +71,64 @@ html, body{
     width: 100%;
 }
 
-
 .team-page{
     height: 100%;
     align-items: center;
+}
+
+.Faculty
+{
+    height: 14rem;
+    width: 18rem;
+    margin: 5%;
+    background-color: rgb(33, 37, 41);
+    border-radius: 5%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Faculty-members{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Faculty img{
+    height: 8rem;
+    width: 7.5rem;
+
+    border-radius: 100%;
+    grid-row: 1;
+    border: 1px solid black;
+
+    position: relative;
+    top: -17%;
+
+    margin-bottom: 10px;
+}
+
+.Faculty p{
+    text-align: center;
+
+    position: relative;
+    top: -15%;
+    margin: 0.3rem 0;
+}
+
+.Faculty .member-name{
+    color: #BD9F67;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Faculty .member-position{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 #our-team-title{
@@ -90,6 +136,7 @@ html, body{
     text-align: center;
     margin: 100px;
 }
+
 .team{
     margin: 5vw;
     display: grid;
@@ -110,7 +157,6 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .member img{
