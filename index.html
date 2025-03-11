@@ -18,102 +18,9 @@
         })();
     </script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-	<style>
-		.bg-dark-gray {
-			background-color: #2d2d2d;
-		}
-
-		.text-gold {
-			color: #d4af37;
-		}
-
-		.hover\:text-gold:hover {
-			color: #d4af37;
-		}
-
-		.hover\:bg-gold:hover {
-			background-color: #d4af37;
-		}
-
-		.bg-cover {
-			background-size: cover;
-		}
-
-		.bg-center {
-			background-position: center;
-		}
-
-		.fade-in {
-			animation: fadeIn 2s ease-in-out;
-		}
-
-		@keyframes fadeIn {
-			0% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 1;
-			}
-		}
-
-		.slide-up {
-			animation: slideUp 1s ease-in-out;
-		}
-
-		@keyframes slideUp {
-			0% {
-				transform: translateY(20px);
-				opacity: 0;
-			}
-
-			100% {
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-
-		.hover-grow:hover {
-			transform: scale(1.05);
-			transition: transform 0.3s ease-in-out;
-		}
-
-		.hover-grow-button:hover {
-			transform: scale(1.1);
-			transition: transform 0.3s ease-in-out;
-		}
-
-		.typing {
-			overflow: hidden;
-			border-right: .15em solid orange;
-			white-space: nowrap;
-			margin: 0 auto;
-			letter-spacing: .15em;
-			animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-		}
-
-		@keyframes typing {
-			from {
-				width: 0;
-			}
-
-			to {
-				width: 100%;
-			}
-		}
-
-		@keyframes blink-caret {
-
-			from,
-			to {
-				border-color: transparent;
-			}
-
-			50% {
-				border-color: rgb(0, 0, 0);
-			}
-		}
-	</style>
+	
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="footer.css">
 </head>
 
 <body class="bg-gray-100">
@@ -369,146 +276,73 @@
 			});
 		</script>
 
-
-<!-- 		<section id="contact" class="py-20 bg-gray-100 text-gray-900 px-4 md:px-8 lg:px-16">
-			<div class="container mx-auto p-6">
-				<div class="text-center mb-8">
-					<h2 class="text-green-500 text-lg">CONTACT US</h2>
-					<br>
-					<h1 class="text-4xl font-bold">Let's Connect</h1>
-				</div>
-				<div class="flex flex-col md:flex-row justify-between items-start">
-					<div class="space-y-6 mb-8 md:mb-0">
-						<div class="flex items-center space-x-4">
-							<div class="bg-green-500 text-white p-4 rounded-full">
-								<i class="fas fa-map-marker-alt"></i>
-							</div>
-							<div>
-								<h3 class="font-bold">Location</h3>
-								<p>Jodhpur, Rajasthan, India</p>
-							</div>
-						</div>
-						<div class="flex items-center space-x-4">
-							<div class="bg-green-500 text-white p-4 rounded-full">
-								<i class="fas fa-phone-alt"></i>
-							</div>
-							<div>
-								<h3 class="font-bold">Phone</h3>
-								<p>+91 9352530523</p>
-							</div>
-						</div>
-						<div class="flex items-center space-x-4">
-							<div class="bg-green-500 text-white p-4 rounded-full">
-								<i class="fas fa-envelope"></i>
-							</div>
-							<div>
-								<h3 class="font-bold">Email</h3>
-								<p>pankajgoyal4152@gmail.com</p>
-							</div>
-						</div>
-					</div>
-					<div class="w-full md:w-1/2">
-						<form id="contact-form" class="space-y-4">
-							<div class="flex space-x-4">
-								<input type="text" name="name" placeholder="Your Name" class="w-1/2 p-3 border rounded"
-									required>
-								<input type="email" name="email" placeholder="Your Email" class="w-1/2 p-3 border rounded"
-									required>
-							</div>
-							<div class="flex space-x-4">
-								<input type="text" name="phone" placeholder="Your Phone" class="w-1/2 p-3 border rounded"
-									required>
-								<input type="text" name="subject" placeholder="Your Subject"
-									class="w-1/2 p-3 border rounded" required>
-							</div>
-							<textarea name="message" placeholder="Start writing message here"
-								class="w-full p-3 border rounded h-32" required></textarea>
-							<button type="submit" class="bg-green-500 text-white px-6 py-3 rounded">SUBMIT NOW</button>
-						</form>
-					</div>
-				</div>
-			</div>
-	
-		</section>
--->
-		<footer class="bg-dark-gray text-white mt-8 py-5 px-4">
-			<div class="container grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-lg mx-5 text-center">
-				<div class="fade-in text-left">
-					<h3 class="text-lg font-bold mb-2 text-gold">
-						About EIC Cell
-					</h3>
-					<p class="text-gray-400">
-						The EIC Cell is dedicated to fostering a culture of entrepreneurship and innovation among
-						students. We
-						provide
-						resources, mentorship, and a platform to help students turn their ideas into successful
-						ventures.
+	<!-- footer section		 -->
+	<footer class="footer">
+		<!-- footer top part -->
+		<div class="footer-top">
+			<!-- left footer section  -->
+			<div class="footer-left footer-section">
+				<div class="about">
+					<h4>About EIC, MBM University</h4>
+					<img src="mbm_logo.jpeg" alt="MBM Logo Logo">
+					<p>
+						The EIC Cell is dedicated to fostering a culture of entrepreneurship and innovation among students. We provide resources, mentorship, and a platform to help students turn their ideas into successful ventures.
 					</p>
 				</div>
-				<div class="fade-in">
-					<h3 class="text-lg font-bold mb-4 text-gold">
-						Quick Links
-					</h3>
+			</div>
+
+			<!-- center footer section  -->
+			<div class="footer-section footer-center">
+				<div class="quick-links">
+					<h4>Quick Links</h4>
 					<ul>
-						<li class="mb-2">
-							<a class="text-gray-400 hover:text-gold transition duration-300" href="#">
-								Home
+						<li><a href="index.html">Site Home</a></li>
+						<li><a href="blog_page/blog_home_page.html">Read Blogs</a></li>
+						<li><a href="team_page.html">About Team</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- right footer section  -->
+			<div class="footer-right footer-section">
+				<div class="follow-us">
+					<h4>Follow Us</h4>
+					<ul>
+						<li>
+							<a target="_blank"
+								href="https://www.linkedin.com/company/eicmbmu/">
+								<i class="fab fa-linkedin-in">
+								</i>
 							</a>
 						</li>
-						<li class="mb-2">
-							<a class="text-gray-400 hover:text-gold transition duration-300"
-								href="blog_page/blog_home_page.html">
-								Blog
-							</a>
-						</li>
-						<li class="mb-2">
-							<a class="text-gray-400 hover:text-gold transition duration-300" href="team_page.html">
-								Team
+						<li>
+							<a target="_blank"
+								href="https://www.instagram.com/eic_mbm">
+								<i class="fab fa-instagram">
+								</i>
 							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="fade-in">
-					<h3 class="text-lg font-bold text-gold mb-4">
-						Follow Us
-					</h3>
-					<div class="flex space-x-4 justify-center">
-						<a class="text-gray-400 hover:text-gold transition duration-300" target="_blank"
-							href="https://www.linkedin.com/company/eicmbmu/">
-							<i class="fab fa-linkedin-in">
-							</i>
-						</a>
-						<a class="text-gray-400 hover:text-gold transition duration-300" target="_blank"
-							href="https://www.instagram.com/eic_mbm?igsh=aGNyY3dnM3Eyemtl">
-							<i class="fab fa-instagram">
-							</i>
-						</a>
-					</div>
-				</div>
 			</div>
-			<!-- <div class="mt-8 text-center text-gray-400 fade-in">
-				 &copy; 2023 EIC Cell. All rights reserved. 
-			</div> -->
-			<div class="mt-2 text-center text-gray-400 fade-in">
-				Designed & Developed by
-				<a class="text-gold hover:underline transition duration-300" target="_blank"
-					href="https://www.linkedin.com/in/pankaj4152/">
-					Pankaj
-				</a>
-				 ,
-				<a class="text-gold hover:underline transition duration-300" target="_blank" href="https://www.linkedin.com/in/avneedadhich2925">
-					Avnee
-				</a>
+		</div>
+
+		<!-- footer bottom part -->
+		 <div class="footer-bottom">
+			<p>This Website is
+				Developed & Maintained by 
+				<a target="_blank" href="https://www.linkedin.com/in/pankaj4152">Pankaj Goyal</a>
 				,
-				<a class="text-gold hover:underline transition duration-300" target="_blank" href="https://www.linkedin.com/in/er-mayank-aggarwal">
-					Mayank
-				</a>
+				<a target="_blank" href="https://www.linkedin.com/in/avneedadhich2925">Avnee Dadhich</a>
+				,
+				<a target="_blank" href="https://www.linkedin.com/in/swemohitgaur">Mohit Gaur</a>
 				and
-				<a class="text-gold hover:underline transition duration-300" target="_blank" href="https://www.linkedin.com/in/swemohitgaur/">
-					Mohit
-				</a>
-			</div>
-		</footer>
+				<a target="_blank" href="https://www.linkedin.com/in/er-mayank-aggarwal">Mayank Aggarwal</a>
+			</p>
+			<p>© Copyright 2025 MBM University, Jodhpur</p>
+		 </div>
+	</footer>
+
 		<script>
 			document.getElementById('menu-button').addEventListener('click', function () {
 				var menu = document.getElementById('mobile-menu');
@@ -518,16 +352,6 @@
 					menu.classList.add('hidden');
 				}
 			});
-			// document.getElementById('contact-form').addEventListener('submit', function (event) {
-			// 	event.preventDefault();
-
-			// 	emailjs.sendForm("service_qkk23x4", "template_mdh0ykn", this)
-			// 		.then(function () {
-			// 			alert('Message sent successfully!');
-			// 		}, function (error) {
-			// 			alert('Failed to send message. Please try again later.');
-			// 		});
-			// });
 		</script>
 	</body>
 
