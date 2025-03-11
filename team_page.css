@@ -1,13 +1,13 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
-/* html, body{
+} 
+html, body{
     height: 100%;
     width: 100%;
-} */
-/* 
+} 
+
 .homepage{
     width: 100%;
     padding-top: 10px;
@@ -16,11 +16,66 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(36, 49, 55);
-} */
+}
 
 .team-page{
     /* height: 100%; */
     align-items: center;
+}
+
+.Faculty
+{
+    height: 14rem;
+    width: 18rem;
+    margin: 5%;
+    background-color: rgb(33, 37, 41);
+    border-radius: 5%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Faculty-members{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Faculty img{
+    height: 8rem;
+    width: 7.5rem;
+
+    border-radius: 100%;
+    grid-row: 1;
+    border: 1px solid black;
+
+    position: relative;
+    top: -17%;
+
+    margin-bottom: 10px;
+}
+
+.Faculty p{
+    text-align: center;
+
+    position: relative;
+    top: -15%;
+    margin: 0.3rem 0;
+}
+
+.Faculty .member-name{
+    color: #BD9F67;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Faculty .member-position{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 #our-team-title{
@@ -28,6 +83,7 @@
     text-align: center;
     margin: 100px;
 }
+
 .team{
     margin: 5vw;
     display: grid;
@@ -48,7 +104,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .member img{
