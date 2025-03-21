@@ -109,6 +109,17 @@
 			</p>
 		</div>
 	</div>
+	<!-- Slideshow Section -->
+<div class="relative w-full h-96 overflow-hidden">
+    <!-- Images -->
+    <div class="absolute w-full h-full transition-opacity duration-1000 opacity-100 slide" style="background-image: url('team.jpeg'); background-size: cover; background-position: center;"></div>
+    <div class="absolute w-full h-full transition-opacity duration-1000 opacity-0 slide" style="background-image: url('logo_eic.jpg'); background-size: cover; background-position: center;"></div>
+    <!--Add Images Here-->
+
+    <!-- Navigation Buttons -->
+    <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75" onclick="prevSlide()">❮</button>
+    <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75" onclick="nextSlide()">❯</button>
+</div>
 	<main class="container mx-auto p-4 max-w-screen-lg">
 		<div class="bg-white rounded-lg shadow-md p-8 text-center relative overflow-hidden fade-in">
 			<div class="relative z-10">
@@ -352,6 +363,28 @@
 					menu.classList.add('hidden');
 				}
 			});
+
+	let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('opacity-100', i === index);
+            slide.classList.toggle('opacity-0', i !== index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
 		</script>
 	</body>
 
