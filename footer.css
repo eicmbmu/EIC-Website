@@ -1,7 +1,7 @@
 footer .footer-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(20, 20, 20);
+    background-color: white
     border-top: 4px solid yellow;
 }
   
@@ -11,7 +11,7 @@ footer .footer-section>div {
 }
   
 .footer-section h4 {
-    color: white;
+    color: rgb(18, 17, 17);
     font-size: 30px;
     font-weight: bolder;
     margin: 10px;
@@ -31,7 +31,7 @@ footer .footer-left>.about>img {
   
 footer .footer-left>.about>p {
     margin: 5px 10px;
-    color: white;
+    color:rgb(20, 20, 20);
     font-size: 16px;
 }
 
@@ -45,12 +45,12 @@ footer .footer-center>.quick-links>ul {
 footer .footer-center>.quick-links>ul>li {
     padding: 5px;
     margin: 5px 0px;
-    color: white;
+    color: rgb(20, 20, 20);
     font-size: 16px;
 }
 
 footer .footer-center>.quick-links>ul>li>a:hover {
-    color: yellow;
+    color: #9b34a1;
 }
 
 footer .footer-right > .follow-us > ul {
@@ -59,17 +59,17 @@ footer .footer-right > .follow-us > ul {
 }
 
 footer .footer-right > .follow-us > ul > li {
-    color: white;
+    color: rgb(39, 35, 35);
     margin: 10px;
 }
 
 footer .footer-right > .follow-us > ul > li > a > i:hover {
-    color: yellow;
+    color: rgb(113, 222, 209);
 }
 
 footer .footer-bottom {
-    color: white;
-    background-color: black;
+    color: rgb(20, 20, 20);
+    background-color: rgb(243, 241, 241);
     text-align: center;
     padding: 25px;
 }
@@ -82,7 +82,7 @@ footer .footer-bottom {
   }
   
   footer .footer-bottom a:link {
-    color: white;
+    color: #9b34a1;
   }
   
   footer .footer-bottom a:visited {
@@ -90,7 +90,7 @@ footer .footer-bottom {
   }
   
   footer .footer-bottom a:hover {
-    color: gold;
+    color: rgb(98, 2, 224);
   }
 
 @media only screen and (max-width: 600px) {
