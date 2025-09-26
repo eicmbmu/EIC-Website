@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Weekly Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Weekly Blogs
+            </div>
+            <nav class="space-x-8 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../index.html">Home</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../team_page.html">Team</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../blog_home_page.html">Blog</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="md:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
+            <a class="block px-4 py-2 text-gray-800 hover:text-blue-500 transition duration-300"
+                href="../../index.html">Home</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../../team_page.html">Team</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../blog_home_page.html">Blog</a>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <div class="mb-4">
+            <a class="text-gray-800 hover:text-gray-600" href="../blog_home_page.html">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+        <article class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+
+
+
+            <h1 class="text-3xl font-bold mb-4">Why Start a Startup?</h1>
+            <!-- <h3>Securing Series A Funding for Growth</h3> -->
+            <br>
+            <div class="flex items-center mb-6">
+                <img alt="Author's profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                    src="../../eiclogo.jpeg" width="50" />
+                <div>
+                    <h2 class="text-gray-800 font-bold">EIC MBM</h2>
+                    <p class="text-gray-600">Published on November 5, 2024</p>
+                </div>
+            </div>
+            
+            <img alt="A detailed illustration of Tailwind CSS components" class="w-full h-auto mb-6 rounded-lg"
+                height="400"                                              
+                width="800" style="height: 400;"
+                src="blogg1.jpg" />
+                <br>
+                <hr>
+                <br>
+            
+            
+
+            <p class="text-lg mb-6"><strong>Why Start a Startup?
+            </strong>Starting a startup can be one of the most rewarding yet challenging decisions of your life. It’s a journey filled with passion, learning, and personal growth. If you’ve ever considered building your own startup, let’s dive into some compelling reasons why this path might be right for you.
+</p>
+            
+            <ol class="list-decimal list-inside mb-6">
+                <li class="text-lg mb-2"><strong>Freedom to Innovate:
+                </strong>One of the most exciting aspects of launching a startup is the freedom to innovate. You have the opportunity to tackle problems that resonate with you deeply. This creative freedom allows you to explore ideas that could potentially transform lives or even entire industries. Imagine waking up every day knowing that your work could lead to meaningful change!
+            </li>
+                <li class="text-lg mb-2"><strong>Be Your Own Boss:
+                </strong>Starting a business means being in control of your own destiny. Unlike traditional jobs, where you often have to adhere to someone else’s schedule and goals, running a startup gives you the autonomy to set your own path. You can create a work environment that reflects your values and preferences, making your daily grind more enjoyable.
+            </li>
+                <li class="text-lg mb-2"><strong>Financial Potential:
+                </strong>While it’s true that startups come with risks, they also offer significant financial rewards. Many successful startups have grown into billion-dollar companies, generating wealth not just for their founders but also for their employees and investors. If you’re willing to take calculated risks, the financial upside can be substantial.
+            </li>
+                <li class="text-lg mb-2"><strong>Personal Growth:
+                </strong>The journey of building a startup is not just about business; it’s also a profound personal development experience. You’ll learn resilience as you navigate challenges, hone your leadership skills, and become adept at problem-solving. This transformative process will shape you into a stronger and more capable individual—skills that are valuable in all areas of life.</li>
+                <li class="text-lg mb-2"><strong> Impact on Society:
+                </strong>Startups often address real-world issues, from technological advancements to social and environmental challenges. By starting your own venture, you can contribute to solutions that make a difference in society. Whether it’s through innovative products or services, your startup has the potential to create positive change in the world.</li>
+                <li class="text-lg mb-2"><strong>Legacy Building:
+                </strong>A startup is more than just a business; it’s an opportunity to leave your mark on the world. You can create something meaningful that lasts beyond your lifetime—a legacy that reflects your passions and values. This sense of purpose can be incredibly fulfilling and motivating.</li>
+            </ol>
+            <br>
+
+            <p class="text-lg mb-6"><strong>Conclusion: </strong>Starting a startup isn’t solely about chasing profits; it’s about pursuing passion, purpose, and progress. If you’ve ever dreamed of creating something extraordinary, this could be your calling. So why not take the leap? Embrace the adventure of entrepreneurship and see where it takes you!
+            </p>
+            
+        </article>
+    </main>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+
+        function sharePost() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert('Post URL copied to clipboard!');
+      });
+    }
+
+    </script>
+</body>
+
+</html>

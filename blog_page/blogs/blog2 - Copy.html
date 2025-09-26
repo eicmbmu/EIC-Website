@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Weekly Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Weekly Blogs
+            </div>
+            <nav class="space-x-8 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../index.html">Home</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../team_page.html">Team</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../blog_home_page.html">Blog</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="md:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
+            <a class="block px-4 py-2 text-gray-800 hover:text-blue-500 transition duration-300"
+                href="../../index.html">Home</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../../team_page.html">Team</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../blog_home_page.html">Blog</a>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <div class="mb-4">
+            <a class="text-gray-800 hover:text-gray-600" href="../blog_home_page.html">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+        <article class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+
+
+
+            <h1 class="text-3xl font-bold mb-4">Why Startups Over Jobs?</h1>
+            <!-- <h3>Securing Series A Funding for Growth</h3> -->
+            <br>
+            <div class="flex items-center mb-6">
+                <img alt="Author's profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                    src="../../eiclogo.jpeg" width="50" />
+                <div>
+                    <h2 class="text-gray-800 font-bold">EIC MBM</h2>
+                    <p class="text-gray-600">Published on November 13, 2024</p>
+                </div>
+            </div>
+            
+            <img alt="A detailed illustration of Tailwind CSS components" class="w-full h-auto mb-6 rounded-lg"
+                height="400"                                              
+                width="800" style="height: 400;"
+                src="blogg2.jpg" />
+                <br>
+                <hr>
+                <br>
+            
+            
+
+            <p class="text-lg mb-6"><strong>Why Startups Over Jobs?
+
+            </strong>When faced with the decision between a traditional job and launching a startup, the latter can feel daunting. However, many entrepreneurs are drawn to the startup route for several compelling reasons. Let’s explore why starting your own business might be the right choice for you.</p>
+            
+            <ol class="list-decimal list-inside mb-6">
+                <li class="text-lg mb-2"><strong> Autonomy and Flexibility:
+                </strong>In a traditional job, your role is often defined by someone else’s expectations. In contrast, a startup gives you the freedom to chart your own course. You decide what projects to prioritize, how to innovate, and how to create on your own terms. This level of autonomy can be incredibly empowering.
+            </li>
+                <li class="text-lg mb-2"><strong>Unlimited Growth Potential:
+                </strong>While traditional jobs typically come with fixed career ladders, startups offer limitless growth opportunities. You can scale your business and expand your personal skills without constraints. The potential for growth—both professionally and financially—is much greater in the startup world.
+            </li>
+                <li class="text-lg mb-2"><strong>Ownership and Accountability:
+                </strong>When you own a startup, every success is yours to celebrate. You’re accountable for your decisions and actions, which fosters a strong sense of pride and responsibility. This ownership can be incredibly motivating, as you see firsthand how your efforts contribute to the success of your venture.
+            </li>
+                <li class="text-lg mb-2"><strong>Building Wealth, Not Just Income:
+                </strong>A traditional job usually provides a steady salary, but a startup has the potential to build lasting wealth. If your business succeeds, equity in that startup can lead to financial independence and security that goes beyond just earning a paycheck.</li>
+                <li class="text-lg mb-2"><strong>Learning Opportunities:
+                </strong>Startups operate in fast-paced environments where learning happens through experience. Unlike traditional jobs, where tasks can become repetitive, working in a startup pushes you to adapt, innovate, and grow continuously. This hands-on learning can be invaluable for personal and professional development.</li>
+                <li class="text-lg mb-2"><strong>Fulfilling a Vision:
+                </strong>In many jobs, you’re helping to fulfill someone else’s vision or goals. A startup allows you to pursue your own passions and work on something that truly matters to you. This sense of purpose can make every step of the journey feel meaningful and rewarding.</li>
+            </ol>
+            <br>
+
+            <p class="text-lg mb-6"><strong>Conclusion: </strong>Choosing a startup over a traditional job isn’t about rejecting stability; it’s about embracing potential and opportunity. While the path may be challenging, the rewards of creating something uniquely yours can make it all worthwhile. If you’re ready for an adventure that offers autonomy, growth, and fulfillment, launching a startup might just be the perfect choice for you!
+            </p>
+            
+        </article>
+    </main>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+
+        function sharePost() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert('Post URL copied to clipboard!');
+      });
+    }
+
+    </script>
+</body>
+
+</html>
