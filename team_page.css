@@ -1,208 +1,374 @@
-      * {
-               margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #acb2c2;
-            margin: 0;
-            padding: 0;
-        }
-        .faculty-section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .faculty-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #000;
-        }
-        .faculty-section h2::after {
-            content: "";
-            display: block;
-            width: 25%;
-            max-width: 80px;
-            min-width: 40px;
-            height: 4px;
-            background: linear-gradient(90deg, blue, red);
-            margin: 15px auto 0;
-            border-radius: 2px;
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        .faculty-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-            position: relative;
-        }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c5c5c5;
+  margin: 0;
+  padding: 0;
+}
 
-        .faculty-card {
-            background-color: rgb(21, 20, 20);
-            border-radius: 15px;
-            padding-top: 120px;
-            padding-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            cursor: pointer;
-            transform: translateY(0);
-            transition: 0.3s ease-in;
-            margin-top: 10rem;
-            position: relative;
-        }
-        .faculty-card:hover {
-            transform: translateY(-10px);
-        }
+.faculty-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #cdcdcd;
+}
 
-        .faculty-card h3 {
-            font-size: 1.2rem;
-            color: #bd9f67;
-            margin-bottom: 5px;
-        }
+.faculty-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+}
 
-        .faculty-card p {
-            font-size: 0.95rem;
-            color: #fff;
-            margin-bottom: 10px;
-        }
-        .faculty-card img {
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #79b4a2;
-            position: absolute;
-            top: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px;
-        }
-        
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            color: #fff;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        .social-icons a:hover {
-            color: aqua;
-            background-color: rgba(0, 255, 255, 0.1);
-        }
+.faculty-section h2::after {
+  content: "";
+  display: block;
+  width: 25%;
+  max-width: 80px;
+  min-width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, blue, red);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
 
-        /* Team Section Styles */
-        .team-section {
-            padding: 40px 20px;
-            text-align: center;
-        }
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-        .team-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #000;
-        }
+.faculty-card {
+  background-color: #151414;
+  border-radius: 15px;
+  padding: 48px 24px 36px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-        .team-section h1::after {
-            content: "";
-            display: block;
-            width: 25%;
-            max-width: 80px;
-            min-width: 40px;
-            height: 4px;
-            background: linear-gradient(90deg, blue, red);
-            margin: 15px auto 0;
-            border-radius: 2px;
-        }
+.faculty-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
 
-        .team {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+.faculty-card h3 {
+  font-size: 1.3rem;
+  color: #bd9f67;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
 
-        .member {
-            background-color: rgb(21, 20, 20);
-            border-radius: 15px;
-            padding-top: 120px;
-            padding-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            cursor: pointer;
-            transform: translateY(0);
-            transition: 0.3s ease-in;
-            margin-top: 10rem;
-            position: relative;
-        }
+.faculty-card p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
 
-        .member:hover {
-            transform: translateY(-10px);
-        }
+.faculty-card img {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #79b4a2;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
 
-        .member img {
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #79b4a2;
-            position: absolute;
-            top: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+.faculty-card:hover img {
+  border-radius: 60%;
+  transform: scale(1.08);
+  border-color: #bd9f67;
+}
 
-        .member-name {
-            font-size: 1.2rem;
-            color: #bd9f67;
-            margin-bottom: 5px;
-        }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+}
 
-        .member-position {
-            font-size: 0.95rem;
-            color: #fff;
-            margin-bottom: 10px;
-        }
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px;
-        }
-        
-        .links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            color: #fff;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            background-color: rgba(139, 53, 53, 0.1);
-        }
-        
-        .links a:hover {
-            color: aqua;
-            background-color: rgb(174, 155, 159);
-        }
-    </style>
-</head>
-<body>
+.social-icons a:hover {
+  color: aqua;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* Team Section Styles */
+.team-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.team-section h1::after {
+  content: "";
+  display: block;
+  width: 25%;
+  max-width: 80px;
+  min-width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, blue, red);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.member {
+  background-color: #151414;
+  border-radius: 15px;
+  padding: 48px 24px 36px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.member img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #79b4a2;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.member:hover img {
+  border-radius: 60%;
+  transform: scale(1.06);
+  border-color: #bd9f67;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  color: #bd9f67;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.member-position {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.links a:hover {
+  color: aqua;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.team-section-old {
+  display: none;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-section-old.active {
+  display: block;
+}
+
+.team-section-old .previous-team-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+  position: relative;
+}
+
+.team-section-old .previous-team-title::after {
+  content: "";
+  display: block;
+  width: 25%;
+  max-width: 80px;
+  min-width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, blue, red);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.previous-team-section {
+  max-width: 500px;
+  /* margin: 60px auto 100px; */
+  margin: 60px auto 20px;
+}
+
+.previous-team-section h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.previous-team-section h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  max-width: 80px;
+  min-width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, blue, red);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.previous-team-accordion {
+  background-color: #151414;
+  padding: 0 4px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.previous-team-accordion summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  font-size: 1.05rem;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.previous-team-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.previous-team-accordion summary i {
+  font-size: 1.1rem;
+  transition: transform 0.25s ease-in-out;
+  color: #bd9f67;
+}
+
+.previous-team-accordion summary:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.previous-team-accordion[open] summary {
+  background-color: rgba(189, 159, 103, 0.08);
+}
+
+.previous-team-accordion[open] summary i {
+  transform: rotate(-180deg);
+}
+
+.previous-team-options {
+  padding: 0 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: accordionFade 0.25s ease-in-out;
+}
+
+@keyframes accordionFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.previous-team-link {
+  color: #bd9f67;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 15px;
+  transition: color 0.2s ease-in-out;
+}
+
+.previous-team-link::before {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.previous-team-link:hover {
+  color: #fff;
+}

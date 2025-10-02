@@ -1,130 +1,132 @@
+footer{
+    overflow-x: hidden;
+}
 footer .footer-top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: white
-    border-top: 4px solid yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
 }
-  
-footer .footer-section>div {
-    margin: 5px;
-    padding: 5px;
+
+footer .footer-section > div {
+  margin: 5px;
+  padding: 5px;
 }
-  
+
 .footer-section h4 {
-    color: rgb(18, 17, 17);
-    font-size: 30px;
-    font-weight: bolder;
-    margin: 10px;
-    padding: 10px;
+  color: rgb(18, 17, 17);
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
 }
-  
+
 footer .footer-left,
 footer .footer-center,
 footer .footer-right {
-    width: 33vw;
-}
-  
-footer .footer-left>.about>img {
-    margin: 20px auto;
-    max-height: 150;
-}
-  
-footer .footer-left>.about>p {
-    margin: 5px 10px;
-    color:rgb(20, 20, 20);
-    font-size: 16px;
+  width: 33vw;
 }
 
-footer .footer-center>.quick-links>ul {
-    list-style: disc;
-    padding: 0px;
-    margin: 10px 40px;
-    text-align: left;
+footer .footer-left > .about > img {
+  margin: 20px auto;
+  max-height: 150;
 }
 
-footer .footer-center>.quick-links>ul>li {
-    padding: 5px;
-    margin: 5px 0px;
-    color: rgb(20, 20, 20);
-    font-size: 16px;
+footer .footer-left > .about > p {
+  margin: 5px 10px;
+  color: rgb(20, 20, 20);
+  font-size: 16px;
 }
 
-footer .footer-center>.quick-links>ul>li>a:hover {
-    color: #9b34a1;
+footer .footer-center > .quick-links > ul {
+  list-style: disc;
+  padding: 0px;
+  margin: 10px 40px;
+  text-align: left;
+}
+
+footer .footer-center > .quick-links > ul > li {
+  padding: 5px;
+  margin: 5px 0px;
+  color: rgb(20, 20, 20);
+  font-size: 16px;
+}
+
+footer .footer-center > .quick-links > ul > li > a:hover {
+  color: #9b34a1;
 }
 
 footer .footer-right > .follow-us > ul {
-    display: flex;
-    margin: 10px;
+  display: flex;
+  margin: 10px;
 }
 
 footer .footer-right > .follow-us > ul > li {
-    color: rgb(39, 35, 35);
-    margin: 10px;
+  color: rgb(39, 35, 35);
+  margin: 10px;
 }
 
 footer .footer-right > .follow-us > ul > li > a > i:hover {
-    color: rgb(113, 222, 209);
+  color: rgb(113, 222, 209);
 }
 
 footer .footer-bottom {
-    color: rgb(20, 20, 20);
-    background-color: rgb(243, 241, 241);
-    text-align: center;
-    padding: 25px;
+  color: rgb(20, 20, 20);
+  background-color: rgb(243, 241, 241);
+  text-align: center;
+  padding: 25px;
 }
-  
-  footer .footer-bottom > p {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 5px;
-    padding: 5px;
-  }
-  
-  footer .footer-bottom a:link {
-    color: #9b34a1;
-  }
-  
-  footer .footer-bottom a:visited {
-    color: white;
-  }
-  
-  footer .footer-bottom a:hover {
-    color: rgb(98, 2, 224);
-  }
+
+footer .footer-bottom > p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px;
+  padding: 5px;
+}
+
+footer .footer-bottom a:link {
+  color: #9b34a1;
+}
+
+footer .footer-bottom a:visited {
+  color: white;
+}
+
+footer .footer-bottom a:hover {
+  color: rgb(98, 2, 224);
+}
 
 @media only screen and (max-width: 600px) {
-    footer .footer-top {
-        grid-template-columns: 1fr;
-    }
+  footer .footer-top {
+    grid-template-columns: 1fr;
+  }
 
-    footer .footer-left,
-    footer .footer-center,
-    footer .footer-right {
-        width: 100vw;
-    }
+  footer .footer-left,
+  footer .footer-center,
+  footer .footer-right {
+    width: 100vw;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-    footer .footer-top {
-        grid-template-columns: 1fr;
-    }
+  footer .footer-top {
+    grid-template-columns: 1fr;
+  }
 
-    footer .footer-left,
-    footer .footer-center,
-    footer .footer-right {
-        width: 100vw;
-    }
+  footer .footer-left,
+  footer .footer-center,
+  footer .footer-right {
+    width: 100vw;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    footer .footer-top {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  footer .footer-top {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    footer .footer-left,
-    footer .footer-center,
-    footer .footer-right {
-        width: 33vw;
-    }
+  footer .footer-left,
+  footer .footer-center,
+  footer .footer-right {
+    width: 33vw;
+  }
 }

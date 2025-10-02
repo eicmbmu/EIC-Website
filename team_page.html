@@ -1,400 +1,1227 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="team_page.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="mbm_logo.jpeg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="team_page.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="mbm_logo.jpeg" type="image/x-icon">
-	<script src="https://cdn.tailwindcss.com"></script>
-    
     <title>Team Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="bg-white shadow-md fade-in">
-		<div class="container mx-auto p-4 flex justify-between items-center">
-			<div class="text-2xl font-bold text-dark-gray">
-				<a class="flex items-center" href="#">
-					<img alt="EIC Cell Logo" class="w-10 h-10 mr-2" height="40" src="mbm_logo.jpeg"
-						style="border-radius: 50%;" width="40" />
-					EIC Cell
-				</a>
-			</div>
-			<nav class="hidden md:flex space-x-4">
-				<a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="index.html">
-				Home
-				</a>
-				<!-- <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-dark-gray">
+          <a class="flex items-center" href="#">
+            <img
+              alt="EIC Cell Logo"
+              class="w-10 h-10 mr-2"
+              height="40"
+              src="mbm_logo.jpeg"
+              style="border-radius: 50%"
+              width="40"
+            />
+            EIC Cell
+          </a>
+        </div>
+        <nav class="hidden md:flex space-x-4">
+          <a
+            class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button"
+            href="index.html"
+          >
+            Home
+          </a>
+          <!-- <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
       About Us
      </a>
      <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
       Events
      </a> -->
-				<a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button"
-					href="blog_page/blog_home_page.html">
-					Blog
-				</a>
-				<a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button"
-					href="team_page.html">
-					Team
-				</a>
-				<!-- <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
+          <a
+            class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button"
+            href="blog_page/blog_home_page.html"
+          >
+            Blog
+          </a>
+          <a
+            class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button"
+            href="team_page.html"
+          >
+            Team
+          </a>
+          <!-- <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
       Contact
      </a> -->
-			</nav>
-			<div class="md:hidden">
-				<button class="text-gray-700 focus:outline-none" id="menu-button">
-					<i class="fas fa-bars">
-					</i>
-				</button>
-			</div>
-		</div>
-		<div class="hidden md:hidden" id="mobile-menu">
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
-				Home
-			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
-				About Us
-			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
-				Events
-			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
-				Blog
-			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
-				Team
-			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
-				Contact
-			</a>
-		</div>
-	</header>
-
-      <div class="faculty-section">
-        <h2>Esteemed Faculty Members</h2>
-        <!--Faculty Members-->
-        <div class="faculty-container">
-            <div class="faculty-card">
-                <img src="images/Faculty/Dr. Manish Kumar.png" alt="Dr. Manish Kumar">
-                <h3>Dr. Manish Kumar</h3>
-                <p>Overall Convenor</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/dr-manish-kumar-677b864/" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:" class="icon" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="faculty-card">
-                <img src="images/Faculty/Dr. Kailash Choudhary.png" alt="Dr. Kailash Chaudhary">
-                <h3>Dr. Kailash Chaudhary</h3>
-                <p>Overall Co-ordinator</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/dr-kailash-chaudhary-5b36bb12" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:" class="icon" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="faculty-card">
-                <img src="images/Faculty/Mr. Abhisek Kumar.png" alt="Sh. Abhisek Gaur">
-                <h3>Sh. Abhisek Gaur</h3>
-                <p>Overall Co-ordinator</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/abhisek-gour" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:" class="icon" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
+        </nav>
+        <div class="md:hidden">
+          <button class="text-gray-700 focus:outline-none" id="menu-button">
+            <i class="fas fa-bars"> </i>
+          </button>
         </div>
+      </div>
+      <div class="hidden md:hidden" id="mobile-menu">
+        <a
+          class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300"
+          href="./index.html"
+        >
+          Home
+        </a>
+        <a
+          class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300"
+          href="./blog_page/blog_home_page.html"
+        >
+          Blog
+        </a>
+      </div>
+    </header>
+
+    <div class="faculty-section">
+      <h2>Faculty Advisors</h2>
+      <!--Faculty Members-->
+      <div class="faculty-container">
+        <div class="faculty-card">
+          <img
+            src="images/Faculty/Dr. Manish Kumar.png"
+            alt="Dr. Manish Kumar"
+          />
+          <h3>Dr. Manish Kumar</h3>
+          <p>Overall Convenor</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/dr-manish-kumar-677b864/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:" class="icon" target="_blank">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="faculty-card">
+          <img
+            src="images/Faculty/Dr. Kailash Choudhary.png"
+            alt="Dr. Kailash Chaudhary"
+          />
+          <h3>Dr. Kailash Chaudhary</h3>
+          <p>Overall Co-ordinator</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/dr-kailash-chaudhary-5b36bb12"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:" class="icon" target="_blank">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="faculty-card">
+          <img
+            src="images/Faculty/Mr. Abhisek Kumar.png"
+            alt="Sh. Abhisek Gaur"
+          />
+          <h3>Sh. Abhisek Gaur</h3>
+          <p>Overall Co-ordinator</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/abhisek-gour"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:" class="icon" target="_blank">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--Team Members-->
     <div class="team-section">
-        <h1 id="our-team-title">Our Team</h1>
-        <div class="team">
-            <div class="member">
-                <img src="images/Members/hemansh mishra.jpeg" alt="Hemansh Mishra">
-                <p class="member-name">Hemansh Mishra</p>
-                <p class="member-position">Overall Co-ordinator</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/hemanshm-tripzyy/" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/mishra_hemansh/" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/prashant yadav.jpg" alt="Prashant Yadav">
-                <p class="member-name">Prashant Yadav</p>
-                <p class="member-position">Co-ordinator</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/prashant-yadav44?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/prash4ntt?igsh=MW5ia3huaWdqb2hxbA==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/nimish singh.jpg" alt="Nimish Singh">
-                <p class="member-name">Nimish Singh</p>
-                <p class="member-position">Co-ordinator</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/nimish-singh-a82b93290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/nimishsingh_/profilecard/?igsh=MTd6d3R0em5qOHF4bw==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/bhuvanyu singh rajpurohit.jpg" alt="Bhuvanyu Rajpurohit">
-                <p class="member-name">Bhuvanyu Rajpurohit</p>
-                <p class="member-position">Research and Analysis</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/bhuvanyu-singh-rajpurohit" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/bhuvanyu.eic.mbmu/" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/khushi choudhary.jpg" alt="Khushi Choudhary">
-                <p class="member-name">Khushi Choudhary</p>
-                <p class="member-position">Research and Analysis</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/khushi-choudhary-0b6047219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/__hiraez?igsh=cW55dGMzMnB3aTUx" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/neha choudhary.png" alt="Neha Choudhary">
-                <p class="member-name">Neha Choudhary</p>
-                <p class="member-position">Content</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/neha-choudhary-323989291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/nehachoudhary9174?igsh=YnhseW1laW1ubHM=" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/kriti soni.jpg" alt="Kriti Soni">
-                <p class="member-name">Kriti Soni</p>
-                <p class="member-position">Content</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/kriti-soni-874384327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/_kritiiii1724_?igsh=MXZpYzEwdnk1ZW1yNA==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/avnee dadhich.jpg" alt="Avnee Dadhich">
-                <p class="member-name">Avnee Dadhich</p>
-                <p class="member-position">Web Development</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/avnee-dadhich-4974752ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/avnee.eic.mbm?igsh=Y21qdHoxNHV0b28x" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/mayank aggarwal.jpg" alt="Mayank Aggarwal">
-                <p class="member-name">Mayank Aggarwal</p>
-                <p class="member-position">Web Development</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/er-mayank-aggarwal" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/agarwal_m_20" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/mohit gaur.png" alt="Mohit Gaur">
-                <p class="member-name">Mohit Gaur</p>
-                <p class="member-position">Web Development</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/mohit-gaur-389546291" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/MohitGaur_17" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/pankaj kumar goyal.jpeg" alt="Pankaj Kumar Goyal">
-                <p class="member-name">Pankaj Kumar Goyal</p>
-                <p class="member-position">Web Development</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/pankaj4152" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pankajgoyal4152" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/akash badgoti.jpg" alt="Akash Badgoti">
-                <p class="member-name">Akash Badgoti</p>
-                <p class="member-position">Visuals</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/akash-khandelwal-256859296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/drishthikon?igsh=MW9pcGkzNzlzNHd6eg==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/bhavesh jain.jpg" alt="Bhavesh Garg">
-                <p class="member-name">Bhavesh Garg</p>
-                <p class="member-position">Visuals</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/bhavesh-jain-1432b628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/garg__bhavesh.2004?igsh=aWoydHQ4amFxOGQw" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/jaishikha shekhawat.jpg" alt="Jaishika Shekhawat">
-                <p class="member-name">Jaishikha Shekhawat</p>
-                <p class="member-position">Visuals</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/jaishikha-shekhawat-146b8928a" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/jaishikha_09?igsh=YWFlOTBzbDR1b3Ay" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/akash singh.jpeg" alt="Akash Singh">
-                <p class="member-name">Akash Singh</p>
-                <p class="member-position">Visuals</p>
-                <div class="links">
-                    <a href="#" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/anushree shekhawat.jpg" alt="Anushree Shekhawat">
-                <p class="member-name">Anushree Shekhawat</p>
-                <p class="member-position">Graphics</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/anushree-shekhawat-5b4265290?trk=contact-info" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/anushree.eic.mbmu?igsh=MTlqOXVvamJjb3AxeA==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/pankaj chouhan.jpeg" alt="Pankaj Chouhan">
-                <p class="member-name">Pankaj Chouhan</p>
-                <p class="member-position">Graphics</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/pankaj-chouhan-8190512b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/punk.ajjj/" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/kovid dadhich.jpg" alt="Kovid Dadhich">
-                <p class="member-name">Kovid Dadhich</p>
-                <p class="member-position">PR & Management</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/koviddadhich" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/kovid_dadhich" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/nikhil pareek.png" alt="Nikhil Pareek">
-                <p class="member-name">Nikhil Pareek</p>
-                <p class="member-position">PR & Management</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/nikhil-pareek-33673b277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/the_nikhil_pareek?igsh=MXczY2pxamY4OHN0eA==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/primal suthar.JPG" alt="Primal Suthar">
-                <p class="member-name">Primal Suthar</p>
-                <p class="member-position">PR & Management</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/primal-primal-741a57323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/chouhan_primal?igsh=c3R2MHhuZ2xtenhj" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="member">
-                <img src="images/Members/harshit khanna.jpg" alt="Harshit Khanna">
-                <p class="member-name">Harshit Khanna</p>
-                <p class="member-position">PR & Management</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/harshit-khanna-624037279" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/_arnav_singh_2001?igsh=YzljYTk1ODg3Zg==" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+      <h1 id="our-team-title">Our Current Team</h1>
+      <div class="team">
+        <div class="member">
+          <img src="images/Members/hemansh mishra.jpeg" alt="Hemansh Mishra" />
+          <p class="member-name">Hemansh Mishra</p>
+          <p class="member-position">Overall Co-ordinator</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/hemanshm-tripzyy/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mishra_hemansh/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
+        <div class="member">
+          <img src="images/Members/prashant yadav.jpg" alt="Prashant Yadav" />
+          <p class="member-name">Prashant Yadav</p>
+          <p class="member-position">Co-ordinator</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/prashant-yadav44?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/prash4ntt?igsh=MW5ia3huaWdqb2hxbA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/nimish singh.jpg" alt="Nimish Singh" />
+          <p class="member-name">Nimish Singh</p>
+          <p class="member-position">Co-ordinator</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/nimish-singh-a82b93290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nimishsingh_/profilecard/?igsh=MTd6d3R0em5qOHF4bw=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/bhuvanyu singh rajpurohit.jpg"
+            alt="Bhuvanyu Rajpurohit"
+          />
+          <p class="member-name">Bhuvanyu Rajpurohit</p>
+          <p class="member-position">Research and Analysis</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/bhuvanyu-singh-rajpurohit"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/bhuvanyu.eic.mbmu/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/khushi choudhary.jpg"
+            alt="Khushi Choudhary"
+          />
+          <p class="member-name">Khushi Choudhary</p>
+          <p class="member-position">Research and Analysis</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/khushi-choudhary-0b6047219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/__hiraez?igsh=cW55dGMzMnB3aTUx"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/neha choudhary.png" alt="Neha Choudhary" />
+          <p class="member-name">Neha Choudhary</p>
+          <p class="member-position">Content</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/neha-choudhary-323989291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nehachoudhary9174?igsh=YnhseW1laW1ubHM="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/kriti soni.jpg" alt="Kriti Soni" />
+          <p class="member-name">Kriti Soni</p>
+          <p class="member-position">Content</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/kriti-soni-874384327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_kritiiii1724_?igsh=MXZpYzEwdnk1ZW1yNA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/avnee dadhich.jpg" alt="Avnee Dadhich" />
+          <p class="member-name">Avnee Dadhich</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/avnee-dadhich-4974752ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/avnee.eic.mbm?igsh=Y21qdHoxNHV0b28x"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/mayank aggarwal.jpg" alt="Mayank Aggarwal" />
+          <p class="member-name">Mayank Aggarwal</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/er-mayank-aggarwal"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/agarwal_m_20"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/mohit gaur.png" alt="Mohit Gaur" />
+          <p class="member-name">Mohit Gaur</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/mohit-gaur-389546291"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/MohitGaur_17"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/pankaj kumar goyal.jpeg"
+            alt="Pankaj Kumar Goyal"
+          />
+          <p class="member-name">Pankaj Kumar Goyal</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/pankaj4152"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/pankajgoyal4152"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/akash badgoti.jpg" alt="Akash Badgoti" />
+          <p class="member-name">Akash Badgoti</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/akash-khandelwal-256859296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/drishthikon?igsh=MW9pcGkzNzlzNHd6eg=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/bhavesh jain.jpg" alt="Bhavesh Garg" />
+          <p class="member-name">Bhavesh Garg</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/bhavesh-jain-1432b628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/garg__bhavesh.2004?igsh=aWoydHQ4amFxOGQw"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/jaishikha shekhawat.jpg"
+            alt="Jaishika Shekhawat"
+          />
+          <p class="member-name">Jaishikha Shekhawat</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/jaishikha-shekhawat-146b8928a"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/jaishikha_09?igsh=YWFlOTBzbDR1b3Ay"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/akash singh.jpeg" alt="Akash Singh" />
+          <p class="member-name">Akash Singh</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a href="#" class="icon" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="icon" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/anushree shekhawat.jpg"
+            alt="Anushree Shekhawat"
+          />
+          <p class="member-name">Anushree Shekhawat</p>
+          <p class="member-position">Graphics</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/anushree-shekhawat-5b4265290?trk=contact-info"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/anushree.eic.mbmu?igsh=MTlqOXVvamJjb3AxeA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/pankaj chouhan.jpeg" alt="Pankaj Chouhan" />
+          <p class="member-name">Pankaj Chouhan</p>
+          <p class="member-position">Graphics</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/pankaj-chouhan-8190512b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/punk.ajjj/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/kovid dadhich.jpg" alt="Kovid Dadhich" />
+          <p class="member-name">Kovid Dadhich</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/koviddadhich"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/kovid_dadhich"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/nikhil pareek.png" alt="Nikhil Pareek" />
+          <p class="member-name">Nikhil Pareek</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/nikhil-pareek-33673b277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/the_nikhil_pareek?igsh=MXczY2pxamY4OHN0eA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/primal suthar.JPG" alt="Primal Suthar" />
+          <p class="member-name">Primal Suthar</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/primal-primal-741a57323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/chouhan_primal?igsh=c3R2MHhuZ2xtenhj"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/harshit khanna.jpg" alt="Harshit Khanna" />
+          <p class="member-name">Harshit Khanna</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/harshit-khanna-624037279"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_arnav_singh_2001?igsh=YzljYTk1ODg3Zg=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- previous teams selections  -->
+    <section class="previous-team-section">
+      <h2>Meet our previous Teams</h2>
+      <details class="previous-team-accordion">
+        <summary>
+          <span class="summary-text">Select a Team Year</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </summary>
+        <div class="previous-team-options">
+          <a
+            href="#"
+            class="previous-team-link"
+            data-target="team-2024-2025"
+          >
+            Meet 2024-2025 Team
+          </a>
+        </div>
+      </details>
+    </section>
+
+
+    <!-- Old Team Members 2024-2025  -->
+    <section class="team-section team-section-old" id="team-2024-2025">
+      <h1 class="previous-team-title">Team 2024-2025</h1>
+      <div class="team">
+        <div class="member">
+          <img src="images/Members/hemansh mishra.jpeg" alt="Hemansh Mishra" />
+          <p class="member-name">Hemansh Mishra</p>
+          <p class="member-position">Overall Co-ordinator</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/hemanshm-tripzyy/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mishra_hemansh/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/prashant yadav.jpg" alt="Prashant Yadav" />
+          <p class="member-name">Prashant Yadav</p>
+          <p class="member-position">Co-ordinator</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/prashant-yadav44?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/prash4ntt?igsh=MW5ia3huaWdqb2hxbA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/nimish singh.jpg" alt="Nimish Singh" />
+          <p class="member-name">Nimish Singh</p>
+          <p class="member-position">Co-ordinator</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/nimish-singh-a82b93290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nimishsingh_/profilecard/?igsh=MTd6d3R0em5qOHF4bw=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/bhuvanyu singh rajpurohit.jpg"
+            alt="Bhuvanyu Rajpurohit"
+          />
+          <p class="member-name">Bhuvanyu Rajpurohit</p>
+          <p class="member-position">Research and Analysis</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/bhuvanyu-singh-rajpurohit"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/bhuvanyu.eic.mbmu/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/khushi choudhary.jpg"
+            alt="Khushi Choudhary"
+          />
+          <p class="member-name">Khushi Choudhary</p>
+          <p class="member-position">Research and Analysis</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/khushi-choudhary-0b6047219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/__hiraez?igsh=cW55dGMzMnB3aTUx"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/neha choudhary.png" alt="Neha Choudhary" />
+          <p class="member-name">Neha Choudhary</p>
+          <p class="member-position">Content</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/neha-choudhary-323989291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nehachoudhary9174?igsh=YnhseW1laW1ubHM="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/kriti soni.jpg" alt="Kriti Soni" />
+          <p class="member-name">Kriti Soni</p>
+          <p class="member-position">Content</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/kriti-soni-874384327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_kritiiii1724_?igsh=MXZpYzEwdnk1ZW1yNA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/avnee dadhich.jpg" alt="Avnee Dadhich" />
+          <p class="member-name">Avnee Dadhich</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/avnee-dadhich-4974752ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/avnee.eic.mbm?igsh=Y21qdHoxNHV0b28x"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/mayank aggarwal.jpg" alt="Mayank Aggarwal" />
+          <p class="member-name">Mayank Aggarwal</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/er-mayank-aggarwal"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/agarwal_m_20"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/mohit gaur.png" alt="Mohit Gaur" />
+          <p class="member-name">Mohit Gaur</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/mohit-gaur-389546291"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/MohitGaur_17"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/pankaj kumar goyal.jpeg"
+            alt="Pankaj Kumar Goyal"
+          />
+          <p class="member-name">Pankaj Kumar Goyal</p>
+          <p class="member-position">Web Development</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/pankaj4152"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/pankajgoyal4152"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/akash badgoti.jpg" alt="Akash Badgoti" />
+          <p class="member-name">Akash Badgoti</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/akash-khandelwal-256859296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/drishthikon?igsh=MW9pcGkzNzlzNHd6eg=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/bhavesh jain.jpg" alt="Bhavesh Garg" />
+          <p class="member-name">Bhavesh Garg</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/bhavesh-jain-1432b628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/garg__bhavesh.2004?igsh=aWoydHQ4amFxOGQw"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/jaishikha shekhawat.jpg"
+            alt="Jaishika Shekhawat"
+          />
+          <p class="member-name">Jaishikha Shekhawat</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/jaishikha-shekhawat-146b8928a"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/jaishikha_09?igsh=YWFlOTBzbDR1b3Ay"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/akash singh.jpeg" alt="Akash Singh" />
+          <p class="member-name">Akash Singh</p>
+          <p class="member-position">Visuals</p>
+          <div class="links">
+            <a href="#" class="icon" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="icon" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            src="images/Members/anushree shekhawat.jpg"
+            alt="Anushree Shekhawat"
+          />
+          <p class="member-name">Anushree Shekhawat</p>
+          <p class="member-position">Graphics</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/anushree-shekhawat-5b4265290?trk=contact-info"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/anushree.eic.mbmu?igsh=MTlqOXVvamJjb3AxeA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/pankaj chouhan.jpeg" alt="Pankaj Chouhan" />
+          <p class="member-name">Pankaj Chouhan</p>
+          <p class="member-position">Graphics</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/pankaj-chouhan-8190512b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/punk.ajjj/"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/kovid dadhich.jpg" alt="Kovid Dadhich" />
+          <p class="member-name">Kovid Dadhich</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/koviddadhich"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/kovid_dadhich"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/nikhil pareek.png" alt="Nikhil Pareek" />
+          <p class="member-name">Nikhil Pareek</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/nikhil-pareek-33673b277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/the_nikhil_pareek?igsh=MXczY2pxamY4OHN0eA=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/primal suthar.JPG" alt="Primal Suthar" />
+          <p class="member-name">Primal Suthar</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/primal-primal-741a57323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/chouhan_primal?igsh=c3R2MHhuZ2xtenhj"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/Members/harshit khanna.jpg" alt="Harshit Khanna" />
+          <p class="member-name">Harshit Khanna</p>
+          <p class="member-position">PR & Management</p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/harshit-khanna-624037279"
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_arnav_singh_2001?igsh=YzljYTk1ODg3Zg=="
+              class="icon"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    	<!-- footer section		 -->
+	<footer class="footer">
+		<!-- footer top part -->
+		<div class="footer-top">
+			<!-- left footer section  -->
+			<div class="footer-left footer-section">
+				<div class="about">
+					<h4>About EIC, MBM University</h4>
+					<img src="mbm_logo.jpeg" alt="MBM Logo Logo">
+					<p>
+						The EIC Cell is dedicated to fostering a culture of entrepreneurship and innovation among students. We provide resources, mentorship, and a platform to help students turn their ideas into successful ventures.
+					</p>
+				</div>
+			</div>
+
+			<!-- center footer section  -->
+			<div class="footer-section footer-center">
+				<div class="quick-links">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="index.html">Site Home</a></li>
+						<li><a href="blog_page/blog_home_page.html">Read Blogs</a></li>
+						<li><a href="team_page.html">About Team</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- right footer section  -->
+			<div class="footer-right footer-section">
+				<div class="follow-us">
+					<h4>Follow Us</h4>
+					<ul>
+						<li>
+							<a target="_blank"
+								href="https://www.linkedin.com/company/eicmbmu/">
+								<i class="fab fa-linkedin-in">
+								</i>
+							</a>
+						</li>
+						<li>
+							<a target="_blank"
+								href="https://www.instagram.com/eic_mbm">
+								<i class="fab fa-instagram">
+								</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer bottom part -->
+		 <div class="footer-bottom">
+			<p>This Website is
+				Developed & Maintained by 
+				<a target="_blank" href="https://www.linkedin.com/in/pankaj4152">Pankaj Goyal</a>
+				,
+				<a target="_blank" href="https://www.linkedin.com/in/avneedadhich2925">Avnee Dadhich</a>
+				,
+				<a target="_blank" href="https://www.linkedin.com/in/swemohitgaur">Mohit Gaur</a>
+				and
+				<a target="_blank" href="https://www.linkedin.com/in/er-mayank-aggarwal">Mayank Aggarwal</a>
+			</p>
+			<p>© Copyright 2025 MBM University, Jodhpur</p>
+		 </div>
+	</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuButton = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (menuButton && mobileMenu) {
+          const icon = menuButton.querySelector("i");
+
+          const setMenuState = (isOpen) => {
+            if (isOpen) {
+              mobileMenu.classList.remove("hidden");
+            } else {
+              mobileMenu.classList.add("hidden");
+            }
+
+            menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+            if (icon) {
+              icon.classList.toggle("fa-bars", !isOpen);
+              icon.classList.toggle("fa-xmark", isOpen);
+            }
+          };
+
+          setMenuState(false);
+
+          menuButton.addEventListener("click", () => {
+            const isCurrentlyOpen = !mobileMenu.classList.contains("hidden");
+            setMenuState(!isCurrentlyOpen);
+          });
+
+          mobileMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+              setMenuState(false);
+            });
+          });
+        }
+
+        const previousTeamLinks = document.querySelectorAll(
+          ".previous-team-link"
+        );
+        const teamSections = document.querySelectorAll(".team-section-old");
+        const accordion = document.querySelector(".previous-team-accordion");
+
+        const hideAllTeams = () => {
+          teamSections.forEach((section) => {
+            section.classList.remove("active");
+          });
+        };
+
+        previousTeamLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute("data-target");
+            if (!targetId) return;
+
+            hideAllTeams();
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+              targetSection.classList.add("active");
+              targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+
+        if (accordion) {
+          accordion.addEventListener("toggle", () => {
+            if (!accordion.open) {
+              hideAllTeams();
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
