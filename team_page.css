@@ -80,10 +80,11 @@ body {
 }
 
 .faculty-card img {
-  height: 140px;
-  width: 140px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
   border: 4px solid #79b4a2;
   transition: all 0.3s ease-in-out;
   margin-bottom: 15px;
@@ -177,10 +178,11 @@ body {
 }
 
 .member img {
-  height: 130px;
-  width: 130px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   object-fit: cover;
+   object-position: top;
   border: 3px solid #79b4a2;
   transition: all 0.3s ease-in-out;
   margin-bottom: 15px;
