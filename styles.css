@@ -7,12 +7,48 @@ body, html {
 }
 
 /* Header Styles */
-header {
-    background-color: rgba(0, 0, 0, 0.7);
+#header {
+    backdrop-filter: blur(8px);
+    background-color: #1a237e;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
+}
+
+header nav a {
+    position: relative;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #facc15;
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+#menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menu-button {
+        display: block;
+    }
+}
+
+#mobile-menu {
+    transition: all 0.3s ease;
 }
 
 nav {

@@ -24,16 +24,12 @@
 </head>
 
 <body class="bg-gray-100">
-	<header class="bg-transparent shadow-md fade-in py-6 fixed w-full top-0 z-20 transition-colors duration-300" id="header">
-		<div class="container mx-auto px-10 flex justify-between items-center">
-			<div class="text-5xl font-bold text-dark-gray pl-50">
-				<a class="flex items-center" href="#">
-					<!-- <img alt="EIC Cell Logo" class="w-19 h-14 ml-[4rem]" height="80" src="logo_eic.jpg" 5width="80" /> -->
-					<p class="text-2xl ">EIC MBMU</p>
-				</a>
-			</div>
-			<nav class="hidden md:flex mr-0 -mr-4">
-				<a class="text-gray-700 text-lg px-5 mx-5 hover:text-gold transition duration-300 hover-grow-button" href="index.html">
+	<header class="bg-blue-600 shadow-md fixed w-full top-0 z-20" id="header">
+		<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+					<h1 class="text-2xl font semibold text-white">EIC MBMU</h1>
+			<!--Desktop Menu-->		
+			<nav class="hidden md:flex space-x-6">
+				<a class="text-white-700 text-lg px-5 mx-5 hover:text-yellow-300 transition duration-300 hover-grow-button" href="index.html">
 				Home
 				</a>
 				<!-- <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
@@ -42,19 +38,19 @@
      <a class="text-gray-700 hover:text-gold transition duration-300 hover-grow-button" href="#">
       Events
      </a> -->
-				<a class="text-gray-700 text-lg px-5 mx-5 hover:text-gold transition duration-300 hover-grow-button"
+				<a class="text-white-700 text-lg px-5 mx-5 hover:text-yellow-300 transition duration-300 hover-grow-button"
 					href="blog_page/blog_home_page.html">
 					Blog
 				</a>
-				<a class="text-gray-700 text-lg px-5 mx-5 hover:text-gold transition duration-300 hover-grow-button"
+				<a class="text-white-700 text-lg px-5 mx-5 hover:text-yellow-300 transition duration-300 hover-grow-button"
 					href="team_page.html">
 					Team
 				</a>
-				<a class="text-gray-700 text-lg px-5 mx-5 hover:text-gold transition duration-300 hover-grow-button"
+				<a class="text-white-700 text-lg px-5 mx-5 hover:text-yellow-300 transition duration-300 hover-grow-button"
 					href="">
 					Events
 				</a>
-				<a class="text-gray-700 text-lg px-5 mx-5 hover:text-gold transition duration-300 hover-grow-button"
+				<a class="text-white-700 text-lg px-5 mx-5 hover:text-yellow-300 transition duration-300 hover-grow-button"
 					href="#contact-form">
 					Contact
 				</a>
@@ -62,33 +58,34 @@
       Contact
      </a> -->
 			</nav>
-			<div class="md:hidden">
-				<button class="text-gray-700 focus:outline-none" id="menu-button">
-					<i class="fas fa-bars">
+			<!-- Mobile Menu Button -->
+				<button class="text-white-700 md-hidden focus:outline-none" id="menu-button">
+					<i class="fas fa-bars text-2xl">
 					</i>
 				</button>
-			</div>
 		</div>
-		<div class="hidden md:hidden" id="mobile-menu">
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
+
+		<!-- Mobile Menu -->
+		<div class="hidden md:hidden bg-blue-600" id="mobile-menu">
+			<a class="block px-4 py-2 text-white-700 hover:bg-blue-700 transition duration-300" href="#">
 				Home
 			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="blog_page/blog_home_page.html">
+			<a class="block px-4 py-2 text-white-700 hover:bg-blue-700 transition duration-300" href="blog_page/blog_home_page.html">
 				Blog
 			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="team_page.html">
+			<a class="block px-4 py-2 text-white-700 hover:bg-blue-700 transition duration-300" href="team_page.html">
 				Team
 			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#">
+			<a class="block px-4 py-2 text-white-700 hover:bg-blue-700 transition duration-300" href="#">
 				Events
 			</a>
-			<a class="block px-4 py-2 text-gray-700 hover:bg-gold transition duration-300" href="#contact-form">
+			<a class="block px-4 py-2 text-white-700 hover:bg-blue-700 transition duration-300" href="#contact-form">
 				Contact
 			</a>
 		</div>
 	</header>
 	<div class="relative h-screen flex items-center justify-center fade-in ">
-		<div class="absolute inset-0 bg-cover bg-center opacity-20 w-full" style="background-image: url('team.jpeg');">
+		<div class="absolute inset-0 bg-cover bg-center opacity-20 w-full" style="background-image: url('bg.png');">
 		</div>
 		<div class="relative z-10 text-center p-8 flex flex-col items-center justify-center">
 			<!-- <div class="bg-white p-4 rounded-full shadow-lg slide-up"> -->
@@ -211,7 +208,7 @@
 		<h2 class="text-pink-500 text-2xl text-center font-bold mt-4">GALLERY</h2>
 <div class="relative w-full h-96 overflow-hidden flex justify-center my-5">
     <!-- Images -->
-    <div class="absolute w-[77%] h-full transition-opacity duration-1000 opacity-100 slide" style="background-image: url('team.jpeg'); background-size: cover; background-position: center;"></div>
+    <div class="absolute w-[77%] h-full transition-opacity duration-1000 opacity-100 slide" style="background-image: url('gallery_1.webp'); background-size: center; background-position: center;"></div>
     <div class="absolute w-[77%] h-full transition-opacity duration-1000 opacity-0 slide" style="background-image: url('logo_eic.jpg'); background-size: cover; background-position: center;"></div>
     <!--Add Images Here-->
 
@@ -230,7 +227,7 @@
 			<div class="flex flex-col md:flex-row justify-between items-start px-20 mx-10">
 				<div class="space-y-6 mb-8 md:mb-0">
 					<div class="flex items-center space-x-4">
-						<div class="text-white p-4 rounded-full" style="background-color: #d5bf45;">
+						<div class="text-white p-4 rounded-full" style="background-color: #1a237e;">
 							<i class="fas fa-map-marker-alt"></i>
 						</div>
 						<div>
@@ -248,7 +245,7 @@
 						</div>
 					</div> -->
 					<div class="flex items-center space-x-4">
-						<div class="text-white p-4 rounded-full" style="background-color: #d5bf45;">
+						<div class="text-white p-4 rounded-full" style="background-color: #1a237e;">
 							<i class="fas fa-envelope"></i>
 						</div>
 						<div>
@@ -273,7 +270,7 @@
 						</div>
 						<textarea name="message" placeholder="Start writing message here"
 							class="w-full p-3 border rounded h-32" required></textarea>
-						<button type="submit" class="bg-[#d5bf45] text-white px-6 py-3 rounded">SUBMIT NOW</button>
+						<button type="submit" class="bg-[#1a237e] text-white px-6 py-3 rounded">SUBMIT NOW</button>
 					</form>
 				</div>
 			</div>
