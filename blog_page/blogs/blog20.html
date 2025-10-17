@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Blogs
+            </div>
+            <nav class="space-x-8 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../index.html">Home</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../team_page.html">Team</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../blog_home_page.html">Blog</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="md:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
+            <a class="block px-4 py-2 text-gray-800 hover:text-blue-500 transition duration-300"
+                href="../../index.html">Home</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../../team_page.html">Team</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../blog_home_page.html">Blog</a>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+    <div class="mb-4">
+        <a class="text-gray-800 hover:text-gray-600" href="../blog_home_page.html">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+    </div>
+    <article class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+        <h1 class="text-3xl font-bold mb-4">Beyond ‘Good Idea’: How to Get Brutally Honest Feedback</h1>
+        <br>
+        <div class="flex items-center mb-6">
+            <img alt="Author's profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                src="../../eiclogo.jpeg" width="50" />
+            <div>
+                <h2 class="text-gray-800 font-bold">EIC MBM</h2>
+                <p class="text-gray-600">Published on October 14, 2025</p>
+            </div>
+        </div>
+        <img alt="An illustration of a founder receiving direct, honest feedback from a customer." class="w-full h-auto mb-6 rounded-lg"
+            height="400" src="blogg20.jpeg" width="800" style="height: 400;" />
+        <br>
+        <hr>
+        <br>
+        <blockquote class="italic text-lg mb-4 border-l-4 pl-4 border-gray-300">
+            "Your friends will say your idea is great. Your customers will tell you the truth."
+        </blockquote>
+
+        <p class="text-lg mb-6">You’ve built your MVP and shown it to friends and family. They all say, “Wow, what a great idea!” It feels good, but it’s dangerously misleading. Polite compliments won’t help you build a better product. You need honest, critical, and sometimes brutal feedback.</p>
+        <p class="text-lg mb-6">Here’s how to get the feedback that actually helps you improve.</p>
+
+        <h2 class="text-3xl font-bold mb-4">Step 1: Ask the Right Questions</h2>
+        <p class="text-lg mb-6">Never ask “Do you like my idea?” It forces people to be polite. Instead, ask open-ended questions that encourage detailed stories.</p>
+        <p class="text-lg mb-2"><strong>Good questions:</strong></p>
+        <ul class="list-disc list-inside text-lg mb-6 ml-4">
+            <li>“Tell me about the last time you faced [the problem you’re solving].”</li>
+            <li>“How are you currently dealing with this problem?”</li>
+            <li>“What was the hardest part of that experience?”</li>
+        </ul>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>Instead of asking, “Do you like our hostel snack delivery app?” ask, “Walk me through what you did the last time you were hungry after 10 PM.” Their story will reveal more than a simple “yes” or “no.”</p>
+        </div>
+        
+        <h2 class="text-3xl font-bold mb-4">Step 2: Watch Them Use It (And Shut Up)</h2>
+        <p class="text-lg mb-6">The best feedback is unspoken. Give your product to a potential user and simply watch them use it. Resist the urge to explain anything. Where do they get stuck? What confuses them? What do they click on first?</p>
+        <p class="text-lg mb-6"><strong>The goal:</strong> See your product through their eyes. Their confusion is not their fault—it's a flaw in your design.</p>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>A student team built a website for renting textbooks. They asked a junior to find a specific book. Instead of guiding them, they just watched. They noticed it took him over a minute to find the search bar. That was a critical insight their friends would have never mentioned.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Step 3: Make it Easy to Complain</h2>
+        <p class="text-lg mb-6">Your happiest users will stay silent, but your frustrated users hold the key to improvement. Make it incredibly easy for them to give feedback, especially negative feedback.</p>
+        <p class="text-lg mb-6"><strong>Simple methods:</strong> A WhatsApp number for complaints, a simple Google Form, or a "Feedback" button that’s easy to find.</p>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>A campus delivery service put a simple question at the bottom of every delivery confirmation: “How could we have made this better? (Be honest!)” This simple step gave them dozens of ideas for improvement.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Step 4: Look for Patterns, Not Opinions</h2>
+        <p class="text-lg mb-6">Don't change your entire product based on one person’s comment. Collect feedback from 10-20 people and look for recurring themes.</p>
+        <p class="text-lg mb-2"><strong>Signal vs. Noise:</strong></p>
+        <ul class="list-disc list-inside text-lg mb-6 ml-4">
+            <li><strong>Noise:</strong> One person says they don’t like the color blue.</li>
+            <li><strong>Signal:</strong> Five people say they can’t find the “checkout” button.</li>
+        </ul>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>If one student says your delivery fee is too high, it’s an opinion. If seven out of ten students say the same thing, it’s a pattern you need to address.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Final Thoughts</h2>
+        <p class="text-lg mb-6">Honest feedback is a gift. It might sting a little, but it’s the only thing that turns a “good idea” into a great product. Stop seeking validation and start seeking the truth. That’s how you build something people genuinely want and need.</p>
+
+    </article>
+    </main>
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

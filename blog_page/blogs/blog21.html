@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Blogs
+            </div>
+            <nav class="space-x-8 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../index.html">Home</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../team_page.html">Team</a>
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../blog_home_page.html">Blog</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="md:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
+            <a class="block px-4 py-2 text-gray-800 hover:text-blue-500 transition duration-300"
+                href="../../index.html">Home</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../../team_page.html">Team</a>
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../blog_home_page.html">Blog</a>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+    <div class="mb-4">
+        <a class="text-gray-800 hover:text-gray-600" href="../blog_home_page.html">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+    </div>
+    <article class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+        <h1 class="text-3xl font-bold mb-4">The Jugaad Mindset: How to Build Your Startup with Zero Budget</h1>
+        <br>
+        <div class="flex items-center mb-6">
+            <img alt="Author's profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                src="../../eiclogo.jpeg" width="50" />
+            <div>
+                <h2 class="text-gray-800 font-bold">EIC MBM</h2>
+                <p class="text-gray-600">Published on October 17, 2025</p>
+            </div>
+        </div>
+        <img alt="An illustration of a student creatively building a startup with limited resources." class="w-full h-auto mb-6 rounded-lg"
+            height="400" src="blogg21.jpeg" width="800" style="height: 400;" />
+        <br>
+        <hr>
+        <br>
+        <blockquote class="italic text-lg mb-4 border-l-4 pl-4 border-gray-300">
+            "Constraints don't block creativity; they force it. For student founders, having no money is a secret advantage."
+        </blockquote>
+
+        <p class="text-lg mb-6">Many students believe you need a lot of money to start a company. You need funds for an app, for marketing, for an office. This is a myth. The most successful startups began with almost nothing. They didn't have cash; they had creativity.</p>
+        <p class="text-lg mb-6">This is the Jugaad Mindset. It’s about being resourceful, finding clever workarounds, and turning limitations into strengths. Here’s how you can build your startup with little to no money.</p>
+
+        <h2 class="text-3xl font-bold mb-4">Step 1: Use Free Tools for Everything</h2>
+        <p class="text-lg mb-6">In 2025, you can run a company using tools that cost nothing. Before you spend a single rupee, check if there’s a free alternative.</p>
+        <p class="text-lg mb-2"><strong>Your free startup toolkit:</strong></p>
+        <ul class="list-disc list-inside text-lg mb-6 ml-4">
+            <li><strong>Website:</strong> Google Sites, Carrd, or Notion.</li>
+            <li><strong>Design:</strong> Canva.</li>
+            <li><strong>Communication:</strong> WhatsApp or Slack.</li>
+            <li><strong>Project Management:</strong> Trello or Google Sheets.</li>
+            <li><strong>Surveys:</strong> Google Forms.</li>
+        </ul>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>A student group wanted to create a portfolio website to showcase their projects. Instead of paying a developer, they used Canva to design the layout and built it on Carrd in a single afternoon for free.</p>
+        </div>
+        
+        <h2 class="text-3xl font-bold mb-4">Step 2: Master the ‘Concierge MVP’</h2>
+        <p class="text-lg mb-6">Don't build an app before you know people want your service. A Concierge MVP means you do everything manually first. You are the app.</p>
+        <p class="text-lg mb-6"><strong>How it works:</strong> Take orders via WhatsApp, manage payments with GPay, track deliveries on a spreadsheet. It's not scalable, but it proves your concept without writing a single line of code.</p>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>Instead of building a complex platform for connecting students with tutors, a founder started a WhatsApp group. He manually matched juniors who needed help with seniors who could teach. It cost nothing and instantly validated the demand.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Step 3: Barter and Collaborate</h2>
+        <p class="text-lg mb-6">You may not have money, but you have skills or time. Find other students who have the skills you lack and trade with them.</p>
+        <p class="text-lg mb-6"><strong>The barter economy:</strong> Need a logo? Offer to write social media content for a design student in return. Need help with coding? Offer to handle marketing for a tech student’s project.</p>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>A founder who was great at public speaking needed a simple animated video. She coached a shy design student for a presentation competition. In return, he created a 30-second explainer video for her startup. Win-win.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Step 4: Build a Community, Not an Ad Campaign</h2>
+        <p class="text-lg mb-6">Paid ads are expensive and inefficient for early-stage startups. Your first 100 users should come from community and word-of-mouth.</p>
+        <p class="text-lg mb-6"><strong>How to do it:</strong> Create a valuable WhatsApp or Instagram community around the problem you’re solving. Share useful information, help people, and build trust. Then, introduce your product to a warm audience.</p>
+        <div class="bg-gray-50 border rounded-md p-4 mb-6">
+            <p class="font-medium mb-2">Example</p>
+            <p>A startup focused on mental wellness for students started an Instagram page sharing tips for managing exam stress. They grew to 1,000 followers in a month. When they launched their first workshop, it sold out instantly because they had already built a trusted community.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Final Thoughts</h2>
+        <p class="text-lg mb-6">Being a student with no budget is not a disadvantage; it’s a filter. It forces you to be creative, to focus on what truly matters, and to build something people want without relying on money. Master the Jugaad Mindset, and you'll learn lessons that no amount of funding can buy.</p>
+
+    </article>
+    </main>
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
