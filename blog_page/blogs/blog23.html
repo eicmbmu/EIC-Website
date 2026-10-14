@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Start With the Problem, Not the Idea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+
+        .verdict {
+            background-color: #f9fafb;
+            border-left: 4px solid #d1d5db;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Blogs
+            </div>
+
+            <nav class="space-x-8 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../index.html">Home</a>
+
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../team_page.html">Team</a>
+
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../blog_home_page.html">Blog</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="md:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
+            <a class="block px-4 py-2 text-gray-800 hover:text-blue-500 transition duration-300"
+                href="../../index.html">Home</a>
+
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../../team_page.html">Team</a>
+
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../blog_home_page.html">Blog</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+
+        <div class="mb-4">
+            <a class="text-gray-800 hover:text-gray-600" href="../blog_home_page.html">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+
+        <article class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+
+            <h1 class="text-3xl font-bold mb-4">
+                Start With the Problem, Not the Idea
+            </h1>
+
+            <br>
+            <div class="flex items-center mb-6">
+                <img alt="EIC MBM logo" class="w-12 h-12 rounded-full mr-4"
+                    height="50" src="../../eiclogo.jpeg" width="50" />
+                <div>
+                    <h2 class="text-gray-800 font-bold">EIC MBM</h2>
+                    <p class="text-gray-600">Published on September 23, 2026</p>
+                </div>
+            </div>
+            <img alt="Start With the Problem, Not the Idea" class="w-full h-auto mb-6 rounded-lg"
+                height="400" src="blog23.jpeg" width="800" style="height: 400;" />
+            <br>
+            <hr>
+            <br>
+
+            <p class="text-lg font-semibold mb-6">Most startups do not fail because the idea was weak. They fail because the founder solved a problem that nobody felt strongly enough to pay to fix.</p>
+
+            <h2 class="text-3xl font-bold mb-4">Idea and problem are different things</h2>
+
+            <p class="text-lg mb-6">An idea is a proposed solution, such as an app that books laundry pickups. A problem is a situation people already live with, such as hostel students losing hours every week waiting for their clothes to be washed and returned. The difference sounds small, but it shapes everything that follows. A good problem statement names who is affected, how often the situation arises, and what it costs them. The idea is only one possible answer to that problem, and frequently it is not the best one.</p>
+
+            <p class="text-lg mb-6">The distinction also changes how you behave. Founders who begin with an idea tend to defend it when the evidence turns against them, because the idea has become part of their identity. Founders who begin with a problem stay curious. The problem survives even when their first solution fails, so they can keep searching for a better answer without feeling that they have failed personally.</p>
+
+            <h2 class="text-3xl font-bold mb-4">A one-line test</h2>
+
+            <p class="text-lg mb-6">Write your problem in a single sentence that does not mention your product at all. If the sentence contains an app name, a feature, or the word platform, rewrite it until it describes only the situation. Students need a faster way to get laundry done still points toward a fix. Students have no reliable way to know when their clothes will be ready describes something that exists whether or not you build anything.</p>
+
+            <p class="text-lg mb-6">Once you have the sentence, read it aloud to yourself and ask whether a stranger would recognise the situation immediately. If they would need an explanation, the problem is probably still too abstract. Keep editing until the sentence feels almost obvious.</p>
+
+            <h2 class="text-3xl font-bold mb-4">Three filters for a real problem</h2>
+
+            <p class="text-lg mb-6">The first filter is frequency. A problem that recurs every week can support a business, while one that arises once a year rarely can. Ask people when the problem last happened, not whether they would like it solved. The answer tells you quickly whether the problem is part of their routine or an occasional annoyance.</p>
+
+            <p class="text-lg mb-6">The second filter is existing workarounds. A WhatsApp group created to share laundry duties, a notebook where a student tracks who owes what, or a friend who always handles bookings all show that people care enough to act. When someone has built a workaround, they have already decided the problem matters. When nobody is doing anything about it, the problem may not be important enough to sustain a business.</p>
+
+            <p class="text-lg mb-6">The third filter is willingness to pay. Compliments and likes cost people nothing, so they reveal very little. Ask who would pay, how much they would pay, and what they already spend in money or time to deal with the situation. A problem with a visible cost is far easier to build around than one that is merely irritating.</p>
+
+            <h2 class="text-3xl font-bold mb-4">Why founders resist this step</h2>
+
+            <p class="text-lg mb-6">Most founders skip this stage for emotional reasons rather than practical ones. An idea feels like progress, and a problem can feel like a pause before the real work begins. Asking people about their frustrations also carries a risk: you might discover that the idea you love is not needed. That discomfort is exactly why this step matters. It is far less expensive to discover a weak problem in a conversation than after three months of building.</p>
+
+            <h2 class="text-3xl font-bold mb-4">A worked example</h2>
+
+            <p class="text-lg mb-6">Meera, a first-year student living in a girls&#x27; hostel, began with a laundry app that offered scheduling, digital payments, and ratings. Before writing a single line of code, she asked ten hostel mates how they handled laundry. She expected complaints about price or about the distance to the laundry shop. Instead, the most common frustration was not knowing when clothes would be ready. Several students said they had arrived at events with nothing suitable to wear because their laundry was still somewhere in the system.</p>
+
+            <p class="text-lg mb-6">Her idea changed dramatically as a result. She dropped the app and started with a shared WhatsApp group in which one person tracked pickup and return times for everyone on the floor. That version was small enough to test within a week, and it addressed the exact problem her classmates had described in their own words. The app could come later, if the simple version proved that students would use the service consistently.</p>
+
+            <h2 class="text-3xl font-bold mb-4">What a strong problem statement looks like</h2>
+
+            <p class="text-lg mb-6">A strong problem statement is specific, observable, and costly. Compare final-year students struggle with placements against final-year students who discover on the morning of an interview that they cannot find their certificates. The second version names a moment, a consequence, and a person. It gives you something to investigate, test, and eventually solve. Vague statements, by contrast, invite endless brainstorming without producing any clear next step.</p>
+
+            <div class="bg-gray-50 border rounded-md p-4 mb-6"><p class="font-medium">Key takeaway: A strong problem names a person, a recurring situation, and a real cost. Anything less is still an assumption dressed up as a plan.</p></div>
+
+            <div class="bg-gray-50 border rounded-md p-4 mb-6"><p class="font-medium">Reflect: What does this problem cost the person living with it, in time, money, or stress?</p></div>
+
+        </article>
+    </main>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
