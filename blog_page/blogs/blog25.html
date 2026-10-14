@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Smallest Product That Teaches You the Most</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-increase:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Blogs
+            </div>
+
+            <nav class="space-x-8 hidden md:flex">
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../index.html">Home</a>
+
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../../team_page.html">Team</a>
+
+                <a class="text-gray-600 hover:text-gray-800 hover-increase transition-transform duration-300"
+                    href="../blog_home_page.html">Blog</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="md:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
+            <a class="block px-4 py-2 text-gray-800 hover:text-blue-500 transition duration-300"
+                href="../../index.html">Home</a>
+
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../../team_page.html">Team</a>
+
+            <a class="block px-4 py-2 text-gray-800 hover:text-gray-600 transition duration-300"
+                href="../blog_home_page.html">Blog</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+
+        <div class="mb-4">
+            <a class="text-gray-800 hover:text-gray-600" href="../blog_home_page.html">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+
+        <article class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+
+            <h1 class="text-3xl font-bold mb-4">
+                The Smallest Product That Teaches You the Most
+            </h1>
+
+            <br>
+
+            <div class="flex items-center mb-6">
+                <img alt="EIC MBM logo" class="w-12 h-12 rounded-full mr-4"
+                    height="50" src="../../eiclogo.jpeg" width="50" />
+
+                <div>
+                    <h2 class="text-gray-800 font-bold">EIC MBM</h2>
+                    <p class="text-gray-600">Published on September 29, 2026</p>
+                </div>
+            </div>
+
+            <img alt="The Smallest Product That Teaches You the Most"
+                class="w-full h-auto mb-6 rounded-lg"
+                height="400"
+                src="blog25.jpeg"
+                width="800"
+                style="height: 400px; object-fit: cover;" />
+
+            <br>
+            <hr>
+            <br>
+
+            <blockquote class="italic text-lg mb-4 border-l-4 pl-4 border-gray-300">
+                The first version of a product exists to produce learning.
+                A product that cannot be tested is not yet a product at all.
+            </blockquote>
+
+            <h2 class="text-3xl font-bold mb-4">
+                What a Minimum Viable Product Really Is
+            </h2>
+
+            <p class="text-lg mb-6">
+                A minimum viable product is the smallest experiment that real users can interact
+                with honestly. The word viable matters. The product must be good enough for
+                people to actually use it, so that their feedback reflects real experience rather
+                than confusion. A Google Form, a WhatsApp group, a shared spreadsheet, a
+                hand-delivered service, or a landing page collecting sign-ups can all qualify.
+            </p>
+
+            <p class="text-lg mb-6">
+                What counts is that people take an action, and that you can observe what they do
+                rather than what they say they would do. Behaviour is the only reliable evidence
+                you will have at this stage. Everything else is an opinion, however sincerely it
+                is offered.
+            </p>
+
+            <h2 class="text-3xl font-bold mb-4">
+                Start with One Question
+            </h2>
+
+            <p class="text-lg mb-6">
+                Before building anything, write down the single question the product must answer.
+                Will students pay Rs 50 each week for verified notes? Will hostel students use a
+                shared laundry tracker more than once in a month? A clear question gives the whole
+                project a direction, and it makes decisions easier, because every feature can be
+                judged by a simple test: does this help us answer the question?
+            </p>
+
+            <p class="text-lg mb-6">
+                Most early products fail not because the idea is wrong but because they try to
+                answer too many questions at once. Logins, ratings, dashboards, and notifications
+                all feel important, but each one consumes time and money without telling you
+                whether the core idea works. Leave them out until the core idea has earned them.
+            </p>
+
+            <h2 class="text-3xl font-bold mb-4">
+                Learning Before Software
+            </h2>
+
+            <p class="text-lg mb-6">
+                Consider a student who wanted to start a tiffin service for hostel students.
+                Instead of building a website or an app, he created a WhatsApp group and took
+                orders for two weeks. He cooked from his own kitchen, delivered by hand, and
+                kept a simple spreadsheet of what sold and what was left over. Within the first
+                week he discovered that students reordered dal and rice far more often than
+                the paneer dishes he had expected to be popular. He also learned that delivery
+                before 1 pm mattered more than the menu itself.
+            </p>
+
+            <p class="text-lg mb-6">
+                Those two facts shaped his menu and his schedule in ways no survey could have
+                predicted. Only after the service ran reliably did he consider building an app,
+                and by then he knew precisely what the app needed to do. The software became
+                a tool for a process he already understood, instead of a bet on an untested process.
+            </p>
+
+            <h2 class="text-3xl font-bold mb-4">
+                The Trap of Building Too Much
+            </h2>
+
+            <p class="text-lg mb-6">
+                Many founders spend months building features that nobody asked for. They tell
+                themselves they need a complete product before anyone can fairly judge it.
+                In reality, every week spent building something untested is a week you could
+                have spent learning whether the idea works at all. A perfect product that
+                nobody wants is still a failure, just a more expensive one. The remedy is a
+                time limit. Give yourself two or three weeks to build the simplest version,
+                and put it in front of people before the deadline arrives. If you cannot get
+                it in front of anyone quickly, that often reveals how much the product
+                depends on assumptions you have not yet tested, which is itself useful information.
+            </p>
+
+            <h2 class="text-3xl font-bold mb-4">
+                Fake It Before You Build It
+            </h2>
+
+            <p class="text-lg mb-6">
+                Many successful early products began with something that looked automated
+                but was actually run by hand. A founder can accept orders through a form
+                and fulfil them manually. A founder can present a single landing page
+                describing a service and measure how many people click to join a waiting
+                list. These approaches cost little and reveal demand quickly. If people
+                will not tolerate a manual version, they are unlikely to tolerate the
+                automated one either.
+            </p>
+
+            <h2 class="text-3xl font-bold mb-4">
+                What to Measure Each Week
+            </h2>
+
+            <p class="text-lg mb-6">
+                Track how many people tried the product, how many came back, how many paid
+                or took the next step, and what they said when you asked. Record these
+                numbers weekly, even when they look small. Patterns usually emerge faster
+                than founders expect, and they point clearly toward the next decision.
+                A small number of people who keep returning is far more useful than a
+                large number who tried it once and disappeared.
+            </p>
+
+            <div class="bg-gray-50 border rounded-md p-4 mb-6">
+                <p class="font-medium mb-2">Key Takeaway</p>
+                <p>
+                    The best first version is the cheapest thing that could prove your idea wrong.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 border rounded-md p-4 mb-6">
+                <p class="font-medium mb-2">Reflect</p>
+                <p>
+                    What single question must your product answer, and what observable
+                    result would tell you the answer?
+                </p>
+            </div>
+
+        </article>
+    </main>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
