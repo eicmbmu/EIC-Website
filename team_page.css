@@ -188,8 +188,12 @@ body {
   margin-bottom: 15px;
 }
 
+.member img.vanshika-photo {
+  object-position: center 100%;
+}
+
 .member:hover img {
-  border-radius: 60%;
+  border-radius: 50%;
   transform: scale(1.06);
   border-color: #bd9f67;
 }
@@ -214,7 +218,8 @@ body {
   margin-top: auto;
 }
 
-.links a {
+.links a,
+.links .icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
